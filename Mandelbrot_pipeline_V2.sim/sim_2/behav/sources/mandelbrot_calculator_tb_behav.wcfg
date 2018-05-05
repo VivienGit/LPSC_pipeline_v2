@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mandelbrot_calculator_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="mandelbrot_calculator_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000000fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="168"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wvobject fp_name="/mandelbrot_calculator_tb/clk_sti" type="logic">
+      <obj_property name="ElementShortName">clk_sti</obj_property>
+      <obj_property name="ObjectShortName">clk_sti</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/rst_sti" type="logic">
+      <obj_property name="ElementShortName">rst_sti</obj_property>
+      <obj_property name="ObjectShortName">rst_sti</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/start_sti" type="logic">
+      <obj_property name="ElementShortName">start_sti</obj_property>
+      <obj_property name="ObjectShortName">start_sti</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/ready_obs" type="logic">
+      <obj_property name="ElementShortName">ready_obs</obj_property>
+      <obj_property name="ObjectShortName">ready_obs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/finished_obs" type="logic">
+      <obj_property name="ElementShortName">finished_obs</obj_property>
+      <obj_property name="ObjectShortName">finished_obs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/sim_end_s" type="other">
+      <obj_property name="ElementShortName">sim_end_s</obj_property>
+      <obj_property name="ObjectShortName">sim_end_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/c_real_sti" type="array">
+      <obj_property name="ElementShortName">c_real_sti[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c_real_sti[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/c_imaginary_sti" type="array">
+      <obj_property name="ElementShortName">c_imaginary_sti[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c_imaginary_sti[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/z_real_obs" type="array">
+      <obj_property name="ElementShortName">z_real_obs[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z_real_obs[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/z_imaginary_obs" type="array">
+      <obj_property name="ElementShortName">z_imaginary_obs[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z_imaginary_obs[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">12</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/iterations_obs" type="array">
+      <obj_property name="ElementShortName">iterations_obs[15:0]</obj_property>
+      <obj_property name="ObjectShortName">iterations_obs[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider52">
+      <obj_property name="label">Behavioral</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/z_real_s" type="array">
+      <obj_property name="ElementShortName">z_real_s[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z_real_s[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/z_imag_s" type="array">
+      <obj_property name="ElementShortName">z_imag_s[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z_imag_s[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/zn1_real_s" type="array">
+      <obj_property name="ElementShortName">zn1_real_s[15:0]</obj_property>
+      <obj_property name="ObjectShortName">zn1_real_s[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/zn1_imag_s" type="array">
+      <obj_property name="ElementShortName">zn1_imag_s[15:0]</obj_property>
+      <obj_property name="ObjectShortName">zn1_imag_s[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/z_real2_big_s" type="array">
+      <obj_property name="ElementShortName">z_real2_big_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">z_real2_big_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/z_imag2_big_s" type="array">
+      <obj_property name="ElementShortName">z_imag2_big_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">z_imag2_big_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/radius_big_s" type="array">
+      <obj_property name="ElementShortName">radius_big_s[32:0]</obj_property>
+      <obj_property name="ObjectShortName">radius_big_s[32:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/radius_s" type="array">
+      <obj_property name="ElementShortName">radius_s[8:0]</obj_property>
+      <obj_property name="ObjectShortName">radius_s[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/z_r2_i2_big_s" type="array">
+      <obj_property name="ElementShortName">z_r2_i2_big_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">z_r2_i2_big_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/zn1_real_new_s" type="array">
+      <obj_property name="ElementShortName">zn1_real_new_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">zn1_real_new_s[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/z_ri_big_s" type="array">
+      <obj_property name="ElementShortName">z_ri_big_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">z_ri_big_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/z_2ri_big_s" type="array">
+      <obj_property name="ElementShortName">z_2ri_big_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">z_2ri_big_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/zn1_imag_new_s" type="array">
+      <obj_property name="ElementShortName">zn1_imag_new_s[31:0]</obj_property>
+      <obj_property name="ObjectShortName">zn1_imag_new_s[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/iterations_s" type="array">
+      <obj_property name="ElementShortName">iterations_s[15:0]</obj_property>
+      <obj_property name="ObjectShortName">iterations_s[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/mandelbrot_calculator_tb/duv/calc_finished_s" type="other">
+      <obj_property name="ElementShortName">calc_finished_s</obj_property>
+      <obj_property name="ObjectShortName">calc_finished_s</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider53">
+      <obj_property name="label">End Behavioral</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+</wave_config>

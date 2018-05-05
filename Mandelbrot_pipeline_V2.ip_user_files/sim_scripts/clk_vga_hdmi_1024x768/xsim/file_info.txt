@@ -1,0 +1,2 @@
+clk_vga_hdmi_1024x768_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../mse_mandelbrot.srcs/sources_1/ip/clk_vga_hdmi_1024x768/clk_vga_hdmi_1024x768_sim_netlist.vhdl,incdir="../../../../mse_mandelbrot.srcs/sources_1/ip/clk_vga_hdmi_1024x768"
+glbl.v,Verilog,xil_defaultlib,glbl.v

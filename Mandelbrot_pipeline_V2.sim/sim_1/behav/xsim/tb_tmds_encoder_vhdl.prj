@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ip/hdl/src/hdmi_interface_pkg.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../ip/hdl/src/tmds_encoder.vhd" \
+"../../../../ip/hdl/src/tb_tmds_encoder.vhd" \
+
+# Do not sort compile order
+nosort

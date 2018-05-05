@@ -1,0 +1,2 @@
+blk_mem_bram_sim_netlist.vhdl,vhdl,xil_defaultlib,../../../../mse_mandelbrot.srcs/sources_1/ip/blk_mem_bram/blk_mem_bram_sim_netlist.vhdl,
+glbl.v,Verilog,xil_defaultlib,glbl.v

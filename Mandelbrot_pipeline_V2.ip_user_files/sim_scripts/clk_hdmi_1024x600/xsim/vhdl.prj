@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../mse_mandelbrot.srcs/sources_1/ip/clk_hdmi_1024x600/clk_hdmi_1024x600_sim_netlist.vhdl" \
+
+nosort

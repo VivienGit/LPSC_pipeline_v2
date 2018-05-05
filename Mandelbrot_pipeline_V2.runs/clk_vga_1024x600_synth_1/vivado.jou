@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Feb 28 12:40:19 2018
+# Process ID: 23826
+# Current directory: /home/joco/Documents/cours/FPGA/master/nexys_video/mse_mandelbrot/mse_mandelbrot.runs/clk_vga_1024x600_synth_1
+# Command line: vivado -log clk_vga_1024x600.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_vga_1024x600.tcl
+# Log file: /home/joco/Documents/cours/FPGA/master/nexys_video/mse_mandelbrot/mse_mandelbrot.runs/clk_vga_1024x600_synth_1/clk_vga_1024x600.vds
+# Journal file: /home/joco/Documents/cours/FPGA/master/nexys_video/mse_mandelbrot/mse_mandelbrot.runs/clk_vga_1024x600_synth_1/vivado.jou
+#-----------------------------------------------------------
+source clk_vga_1024x600.tcl -notrace

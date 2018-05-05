@@ -1,0 +1,1174 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sat May  5 10:07:08 2018
+| Host         : Vivien-HP running 64-bit Service Pack 1  (build 7601)
+| Command      : report_methodology -file mse_mandelbrot_methodology_drc_routed.rpt -pb mse_mandelbrot_methodology_drc_routed.pb -rpx mse_mandelbrot_methodology_drc_routed.rpx
+| Design       : mse_mandelbrot
+| Device       : xc7a200tsbg484-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 227
++-----------+----------+----------------------------------------------------+------------+
+| Rule      | Severity | Description                                        | Violations |
++-----------+----------+----------------------------------------------------+------------+
+| DPIR-1    | Warning  | Asynchronous driver check                          | 144        |
+| TIMING-2  | Warning  | Invalid primary clock source pin                   | 1          |
+| TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                      | 1          |
+| TIMING-20 | Warning  | Non-clocked latch                                  | 80         |
++-----------+----------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#31 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#32 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#33 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#34 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#35 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#36 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#37 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#38 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#39 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#40 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#41 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#42 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#43 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#44 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#45 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#46 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#47 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#48 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#49 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#50 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#51 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#52 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#53 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#54 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#55 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#56 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#57 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#58 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#59 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#60 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#61 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#62 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#63 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#64 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#65 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#66 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#67 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#68 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#69 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#70 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#71 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#72 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#73 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#74 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#75 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#76 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#77 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#78 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#79 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#80 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#81 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#82 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#83 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#84 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#85 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#86 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#87 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#88 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#89 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#90 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#91 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#92 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#93 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#94 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#95 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#96 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#97 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#98 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#99 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#100 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#101 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#102 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#103 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#104 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#105 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#106 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#107 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#108 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#109 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#110 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#111 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#112 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#113 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#114 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#115 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#116 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#117 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#118 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#119 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#120 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#121 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#122 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#123 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#124 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#125 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#126 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#127 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#128 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#129 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#130 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#131 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#132 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#133 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#134 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#135 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#136 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#137 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#138 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#139 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#140 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#141 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#142 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#143 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#144 Warning
+Asynchronous driver check  
+DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+TIMING-2#1 Warning
+Invalid primary clock source pin  
+A primary clock HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/inst/ClkSys100MhzxC is created on an inappropriate pin HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/inst/ClkSys100MhzxC. It is recommended to create a primary clock only on a proper clock source (input port or primitive output pin with no timing arc)
+Related violations: <none>
+
+TIMING-4#1 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/inst/ClkSys100MhzxC is defined downstream of clock sys_clk_pin and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on RstxR relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[12] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[13] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[14] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[15] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[16] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[17] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[18] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[19] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[20] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[21] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[22] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[23] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[24] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[25] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[26] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[27] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_new_s_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[12] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[13] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[14] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[15] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[16] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[17] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[18] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[19] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[20] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[21] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[22] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[23] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[24] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[25] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[26] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[27] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_new_s_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[11] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[12] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[13] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[14] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[15] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[16] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[17] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[18] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[19] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[20] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[21] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[22] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[23] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[24] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[25] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[26] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[12] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[13] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[14] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[15] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[16] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[17] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[18] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[19] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[20] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[21] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[22] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[23] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[24] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[25] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[26] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[27] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_imag_new_s_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[12] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[13] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[14] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[15] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[16] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[17] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[18] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[19] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[20] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[21] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[22] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[23] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[24] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[25] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[26] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[27] cannot be properly analyzed as its control pin mandelbrot_calculatorxB.mandelbrot_calculatorxI/zn1_real_new_s_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+

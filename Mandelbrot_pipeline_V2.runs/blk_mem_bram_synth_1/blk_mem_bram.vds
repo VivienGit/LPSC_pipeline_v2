@@ -1,0 +1,602 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Apr 17 17:45:41 2018
+# Process ID: 13832
+# Current directory: C:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.runs/blk_mem_bram_synth_1
+# Command line: vivado.exe -log blk_mem_bram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_bram.tcl
+# Log file: C:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.runs/blk_mem_bram_synth_1/blk_mem_bram.vds
+# Journal file: C:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.runs/blk_mem_bram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_bram.tcl -notrace
+Command: synth_design -top blk_mem_bram -part xc7a200tsbg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12076 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 340.660 ; gain = 95.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'blk_mem_bram' [c:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.srcs/sources_1/ip/blk_mem_bram/synth/blk_mem_bram.vhd:74]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_bram.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 7 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 7 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 614400 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 614400 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 20 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: READ_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 7 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 7 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 614400 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 614400 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 20 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 130 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 3 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     33.237238 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.srcs/sources_1/ip/blk_mem_bram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.srcs/sources_1/ip/blk_mem_bram/synth/blk_mem_bram.vhd:243]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_bram' (11#1) [c:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.srcs/sources_1/ip/blk_mem_bram/synth/blk_mem_bram.vhd:74]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REG_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REGCE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[19]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[18]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[895]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[894]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[893]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[892]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[891]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[890]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[889]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[888]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[887]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[886]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[885]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[884]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[883]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[882]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[881]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[880]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[879]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[878]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[877]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[876]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[875]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[874]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[873]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[872]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[871]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[870]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[869]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[868]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[867]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[866]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[865]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[864]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[863]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[862]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[861]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[860]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[859]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[858]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[857]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[856]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[855]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[854]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[853]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[852]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[851]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[850]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[849]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[848]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[847]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[846]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[845]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[844]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[843]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[842]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[841]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[840]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[839]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[838]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[837]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[836]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[835]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[834]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[833]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[832]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[831]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[830]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[829]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[828]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[827]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[826]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[825]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[824]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[823]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[822]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:04:19 ; elapsed = 00:04:20 . Memory (MB): peak = 646.000 ; gain = 400.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:20 ; elapsed = 00:04:21 . Memory (MB): peak = 646.000 ; gain = 400.484
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 133 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.srcs/sources_1/ip/blk_mem_bram/blk_mem_bram_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.srcs/sources_1/ip/blk_mem_bram/blk_mem_bram_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.runs/blk_mem_bram_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.runs/blk_mem_bram_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 823.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:04:42 ; elapsed = 00:04:44 . Memory (MB): peak = 823.453 ; gain = 577.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:04:42 ; elapsed = 00:04:44 . Memory (MB): peak = 823.453 ; gain = 577.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.runs/blk_mem_bram_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:42 ; elapsed = 00:04:44 . Memory (MB): peak = 823.453 ; gain = 577.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:47 ; elapsed = 00:04:50 . Memory (MB): peak = 823.453 ; gain = 577.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 256   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 128   
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:54 ; elapsed = 00:04:57 . Memory (MB): peak = 823.453 ; gain = 577.938
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:10 ; elapsed = 00:05:13 . Memory (MB): peak = 823.453 ; gain = 577.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:11 ; elapsed = 00:05:14 . Memory (MB): peak = 832.090 ; gain = 586.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:11 ; elapsed = 00:05:14 . Memory (MB): peak = 850.715 ; gain = 605.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:12 ; elapsed = 00:05:16 . Memory (MB): peak = 850.715 ; gain = 605.199
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:12 ; elapsed = 00:05:16 . Memory (MB): peak = 850.715 ; gain = 605.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:13 ; elapsed = 00:05:16 . Memory (MB): peak = 850.715 ; gain = 605.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:13 ; elapsed = 00:05:16 . Memory (MB): peak = 850.715 ; gain = 605.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:13 ; elapsed = 00:05:16 . Memory (MB): peak = 850.715 ; gain = 605.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:13 ; elapsed = 00:05:16 . Memory (MB): peak = 850.715 ; gain = 605.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |LUT3       |     4|
+|2     |LUT4       |    20|
+|3     |LUT5       |     2|
+|4     |LUT6       |    56|
+|5     |MUXF7      |    12|
+|6     |RAMB18E1   |     2|
+|7     |RAMB18E1_1 |     1|
+|8     |RAMB36E1   |    63|
+|9     |RAMB36E1_1 |    63|
+|10    |RAMB36E1_2 |     1|
+|11    |RAMB36E1_3 |     2|
+|12    |RAMB36E1_4 |     1|
+|13    |FDRE       |    14|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+------------------------------------------+------+
+|      |Instance                                     |Module                                    |Cells |
++------+---------------------------------------------+------------------------------------------+------+
+|1     |top                                          |                                          |   241|
+|2     |  U0                                         |blk_mem_gen_v8_4_1                        |   241|
+|3     |    inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth                  |   241|
+|4     |      \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                           |   241|
+|5     |        \valid.cstr                          |blk_mem_gen_generic_cstr                  |   241|
+|6     |          \has_mux_a.A                       |blk_mem_gen_mux                           |    42|
+|7     |          \has_mux_b.B                       |blk_mem_gen_mux__parameterized0           |    42|
+|8     |          \ramloop[0].ram.r                  |blk_mem_gen_prim_width                    |     2|
+|9     |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                  |     2|
+|10    |          \ramloop[10].ram.r                 |blk_mem_gen_prim_width__parameterized9    |     1|
+|11    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized9  |     1|
+|12    |          \ramloop[11].ram.r                 |blk_mem_gen_prim_width__parameterized10   |     2|
+|13    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized10 |     2|
+|14    |          \ramloop[12].ram.r                 |blk_mem_gen_prim_width__parameterized11   |     2|
+|15    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized11 |     2|
+|16    |          \ramloop[13].ram.r                 |blk_mem_gen_prim_width__parameterized12   |     2|
+|17    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized12 |     2|
+|18    |          \ramloop[14].ram.r                 |blk_mem_gen_prim_width__parameterized13   |     2|
+|19    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized13 |     2|
+|20    |          \ramloop[15].ram.r                 |blk_mem_gen_prim_width__parameterized14   |     2|
+|21    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized14 |     2|
+|22    |          \ramloop[16].ram.r                 |blk_mem_gen_prim_width__parameterized15   |     2|
+|23    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized15 |     2|
+|24    |          \ramloop[17].ram.r                 |blk_mem_gen_prim_width__parameterized16   |     2|
+|25    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized16 |     2|
+|26    |          \ramloop[18].ram.r                 |blk_mem_gen_prim_width__parameterized17   |     2|
+|27    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized17 |     2|
+|28    |          \ramloop[19].ram.r                 |blk_mem_gen_prim_width__parameterized18   |     2|
+|29    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized18 |     2|
+|30    |          \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0    |     2|
+|31    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0  |     2|
+|32    |          \ramloop[20].ram.r                 |blk_mem_gen_prim_width__parameterized19   |     1|
+|33    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized19 |     1|
+|34    |          \ramloop[21].ram.r                 |blk_mem_gen_prim_width__parameterized20   |     2|
+|35    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized20 |     2|
+|36    |          \ramloop[22].ram.r                 |blk_mem_gen_prim_width__parameterized21   |     2|
+|37    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized21 |     2|
+|38    |          \ramloop[23].ram.r                 |blk_mem_gen_prim_width__parameterized22   |     2|
+|39    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized22 |     2|
+|40    |          \ramloop[24].ram.r                 |blk_mem_gen_prim_width__parameterized23   |     2|
+|41    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized23 |     2|
+|42    |          \ramloop[25].ram.r                 |blk_mem_gen_prim_width__parameterized24   |     2|
+|43    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized24 |     2|
+|44    |          \ramloop[26].ram.r                 |blk_mem_gen_prim_width__parameterized25   |     2|
+|45    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized25 |     2|
+|46    |          \ramloop[27].ram.r                 |blk_mem_gen_prim_width__parameterized26   |     2|
+|47    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized26 |     2|
+|48    |          \ramloop[28].ram.r                 |blk_mem_gen_prim_width__parameterized27   |     2|
+|49    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized27 |     2|
+|50    |          \ramloop[29].ram.r                 |blk_mem_gen_prim_width__parameterized28   |     2|
+|51    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized28 |     2|
+|52    |          \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1    |     2|
+|53    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1  |     2|
+|54    |          \ramloop[30].ram.r                 |blk_mem_gen_prim_width__parameterized29   |     1|
+|55    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized29 |     1|
+|56    |          \ramloop[31].ram.r                 |blk_mem_gen_prim_width__parameterized30   |     2|
+|57    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized30 |     2|
+|58    |          \ramloop[32].ram.r                 |blk_mem_gen_prim_width__parameterized31   |     2|
+|59    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized31 |     2|
+|60    |          \ramloop[33].ram.r                 |blk_mem_gen_prim_width__parameterized32   |     2|
+|61    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized32 |     2|
+|62    |          \ramloop[34].ram.r                 |blk_mem_gen_prim_width__parameterized33   |     2|
+|63    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized33 |     2|
+|64    |          \ramloop[35].ram.r                 |blk_mem_gen_prim_width__parameterized34   |     2|
+|65    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized34 |     2|
+|66    |          \ramloop[36].ram.r                 |blk_mem_gen_prim_width__parameterized35   |     2|
+|67    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized35 |     2|
+|68    |          \ramloop[37].ram.r                 |blk_mem_gen_prim_width__parameterized36   |     2|
+|69    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized36 |     2|
+|70    |          \ramloop[38].ram.r                 |blk_mem_gen_prim_width__parameterized37   |     2|
+|71    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized37 |     2|
+|72    |          \ramloop[39].ram.r                 |blk_mem_gen_prim_width__parameterized38   |     2|
+|73    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized38 |     2|
+|74    |          \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2    |     2|
+|75    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2  |     2|
+|76    |          \ramloop[40].ram.r                 |blk_mem_gen_prim_width__parameterized39   |     3|
+|77    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized39 |     3|
+|78    |          \ramloop[41].ram.r                 |blk_mem_gen_prim_width__parameterized40   |     5|
+|79    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized40 |     5|
+|80    |          \ramloop[42].ram.r                 |blk_mem_gen_prim_width__parameterized41   |     2|
+|81    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized41 |     2|
+|82    |          \ramloop[43].ram.r                 |blk_mem_gen_prim_width__parameterized42   |     2|
+|83    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized42 |     2|
+|84    |          \ramloop[44].ram.r                 |blk_mem_gen_prim_width__parameterized43   |     2|
+|85    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized43 |     2|
+|86    |          \ramloop[45].ram.r                 |blk_mem_gen_prim_width__parameterized44   |     2|
+|87    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized44 |     2|
+|88    |          \ramloop[46].ram.r                 |blk_mem_gen_prim_width__parameterized45   |     2|
+|89    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized45 |     2|
+|90    |          \ramloop[47].ram.r                 |blk_mem_gen_prim_width__parameterized46   |     2|
+|91    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized46 |     2|
+|92    |          \ramloop[48].ram.r                 |blk_mem_gen_prim_width__parameterized47   |     2|
+|93    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized47 |     2|
+|94    |          \ramloop[49].ram.r                 |blk_mem_gen_prim_width__parameterized48   |     2|
+|95    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized48 |     2|
+|96    |          \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3    |     2|
+|97    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized3  |     2|
+|98    |          \ramloop[50].ram.r                 |blk_mem_gen_prim_width__parameterized49   |     2|
+|99    |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized49 |     2|
+|100   |          \ramloop[51].ram.r                 |blk_mem_gen_prim_width__parameterized50   |     4|
+|101   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized50 |     4|
+|102   |          \ramloop[52].ram.r                 |blk_mem_gen_prim_width__parameterized51   |     4|
+|103   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized51 |     4|
+|104   |          \ramloop[53].ram.r                 |blk_mem_gen_prim_width__parameterized52   |     4|
+|105   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized52 |     4|
+|106   |          \ramloop[54].ram.r                 |blk_mem_gen_prim_width__parameterized53   |     4|
+|107   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized53 |     4|
+|108   |          \ramloop[55].ram.r                 |blk_mem_gen_prim_width__parameterized54   |     4|
+|109   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized54 |     4|
+|110   |          \ramloop[56].ram.r                 |blk_mem_gen_prim_width__parameterized55   |     4|
+|111   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized55 |     4|
+|112   |          \ramloop[57].ram.r                 |blk_mem_gen_prim_width__parameterized56   |     4|
+|113   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized56 |     4|
+|114   |          \ramloop[58].ram.r                 |blk_mem_gen_prim_width__parameterized57   |     4|
+|115   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized57 |     4|
+|116   |          \ramloop[59].ram.r                 |blk_mem_gen_prim_width__parameterized58   |     2|
+|117   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized58 |     2|
+|118   |          \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4    |     2|
+|119   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized4  |     2|
+|120   |          \ramloop[60].ram.r                 |blk_mem_gen_prim_width__parameterized59   |     1|
+|121   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized59 |     1|
+|122   |          \ramloop[61].ram.r                 |blk_mem_gen_prim_width__parameterized60   |     2|
+|123   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized60 |     2|
+|124   |          \ramloop[62].ram.r                 |blk_mem_gen_prim_width__parameterized61   |     2|
+|125   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized61 |     2|
+|126   |          \ramloop[63].ram.r                 |blk_mem_gen_prim_width__parameterized62   |     2|
+|127   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized62 |     2|
+|128   |          \ramloop[64].ram.r                 |blk_mem_gen_prim_width__parameterized63   |     2|
+|129   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized63 |     2|
+|130   |          \ramloop[65].ram.r                 |blk_mem_gen_prim_width__parameterized64   |     2|
+|131   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized64 |     2|
+|132   |          \ramloop[66].ram.r                 |blk_mem_gen_prim_width__parameterized65   |     2|
+|133   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized65 |     2|
+|134   |          \ramloop[67].ram.r                 |blk_mem_gen_prim_width__parameterized66   |     2|
+|135   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized66 |     2|
+|136   |          \ramloop[68].ram.r                 |blk_mem_gen_prim_width__parameterized67   |     2|
+|137   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized67 |     2|
+|138   |          \ramloop[69].ram.r                 |blk_mem_gen_prim_width__parameterized68   |     4|
+|139   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized68 |     4|
+|140   |          \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5    |     2|
+|141   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized5  |     2|
+|142   |          \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6    |     2|
+|143   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized6  |     2|
+|144   |          \ramloop[8].ram.r                  |blk_mem_gen_prim_width__parameterized7    |     2|
+|145   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized7  |     2|
+|146   |          \ramloop[9].ram.r                  |blk_mem_gen_prim_width__parameterized8    |     1|
+|147   |            \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized8  |     1|
++------+---------------------------------------------+------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:13 ; elapsed = 00:05:16 . Memory (MB): peak = 850.715 ; gain = 605.199
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3766 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:05:02 . Memory (MB): peak = 850.715 ; gain = 427.746
+Synthesis Optimization Complete : Time (s): cpu = 00:05:13 ; elapsed = 00:05:16 . Memory (MB): peak = 850.715 ; gain = 605.199
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:17 ; elapsed = 00:05:21 . Memory (MB): peak = 865.023 ; gain = 630.977
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.runs/blk_mem_bram_synth_1/blk_mem_bram.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.srcs/sources_1/ip/blk_mem_bram/blk_mem_bram.xci
+INFO: [Coretcl 2-1174] Renamed 146 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Vivien/Documents/Master/S2/LPSC/Section11/mse_mandelbrot_no_bram/mse_mandelbrot.runs/blk_mem_bram_synth_1/blk_mem_bram.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file blk_mem_bram_utilization_synth.rpt -pb blk_mem_bram_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 865.023 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 17 17:51:12 2018...

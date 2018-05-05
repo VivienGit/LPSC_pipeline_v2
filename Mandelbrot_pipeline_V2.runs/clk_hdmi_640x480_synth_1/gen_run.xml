@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="clk_hdmi_640x480_synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1519822598">
+  <File Type="RDS-UTIL" Name="clk_hdmi_640x480_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="clk_hdmi_640x480_utilization_synth.pb"/>
+  <File Type="RDS-RDS" Name="clk_hdmi_640x480.vds"/>
+  <File Type="RDS-DCP" Name="clk_hdmi_640x480.dcp"/>
+  <File Type="PA-TCL" Name="clk_hdmi_640x480.tcl"/>
+  <File Type="REPORTS-TCL" Name="clk_hdmi_640x480_reports.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_hdmi_640x480">
+    <File Path="$PSRCDIR/sources_1/ip/clk_hdmi_640x480/clk_hdmi_640x480.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Section11/mse_mandelbrot_no_bram/mse_mandelbrot.srcs/sources_1/ip/clk_hdmi_640x480/clk_hdmi_640x480.xci"/>
+        <Attr Name="ImportTime" Val="1522232578"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="clk_hdmi_640x480"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_hdmi_640x480">
+    <File Path="$PSRCDIR/sources_1/ip/clk_hdmi_640x480/clk_hdmi_640x480.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Section11/mse_mandelbrot_no_bram/mse_mandelbrot.srcs/sources_1/ip/clk_hdmi_640x480/clk_hdmi_640x480.xci"/>
+        <Attr Name="ImportTime" Val="1522232578"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="clk_hdmi_640x480"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
