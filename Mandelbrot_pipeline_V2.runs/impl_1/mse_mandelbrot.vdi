@@ -2,43 +2,45 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat May  5 10:04:00 2018
-# Process ID: 640
-# Current directory: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1
+# Start of session at: Sat May  5 17:55:53 2018
+# Process ID: 18180
+# Current directory: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1
 # Command line: vivado.exe -log mse_mandelbrot.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mse_mandelbrot.tcl -notrace
-# Log file: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/mse_mandelbrot.vdi
-# Journal file: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1\vivado.jou
+# Log file: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/mse_mandelbrot.vdi
+# Journal file: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source mse_mandelbrot.tcl -notrace
-Command: link_design -top mse_mandelbrot -part xc7a200tsbg484-1
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/blk_mem_bram/blk_mem_bram.dcp' for cell 'blk_mem_bramxB.blk_mem_bramxI'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.dcp' for cell 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI'
-INFO: [Netlist 29-17] Analyzing 208 Unisim elements for replacement
+Command: open_checkpoint C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/mse_mandelbrot.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 226.762 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 191 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2017.4
 INFO: [Device 21-403] Loading part xc7a200tsbg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/inst/clkin1_ibufg 
-Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/ClkSys100MhzxC' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/.Xil/Vivado-640-Vivien-HP/dcp3/clk_vga_hdmi_1024x600.edf:322]
-Parsing XDC File [c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600_board.xdc] for cell 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/inst'
-Finished Parsing XDC File [c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600_board.xdc] for cell 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/inst'
-Parsing XDC File [c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc] for cell 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc:57]
-get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1181.945 ; gain = 568.070
-Finished Parsing XDC File [c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc] for cell 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/inst'
-Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc]
-Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/ClkSys100MhzxC' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [C:/Users/Vivien/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20868-Vivien-HP/dcp3/clk_vga_hdmi_1024x600.edf:322]
+Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-18180-Vivien-HP/dcp1/mse_mandelbrot_board.xdc]
+Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-18180-Vivien-HP/dcp1/mse_mandelbrot_board.xdc]
+Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-18180-Vivien-HP/dcp1/mse_mandelbrot_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc:57]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1159.918 ; gain = 567.250
+Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-18180-Vivien-HP/dcp1/mse_mandelbrot_early.xdc]
+Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-18180-Vivien-HP/dcp1/mse_mandelbrot.xdc]
+Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-18180-Vivien-HP/dcp1/mse_mandelbrot.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1160.043 ; gain = 0.063
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1160.043 ; gain = 0.063
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
-link_design completed successfully
-link_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1182.039 ; gain = 951.570
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
+open_checkpoint: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1160.293 ; gain = 933.531
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
@@ -49,55 +51,54 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1182.039 ; gain = 0.000
-INFO: [Timing 38-35] Done setting XDC timing constraints.
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1177.816 ; gain = 15.836
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 84b7e715
+Phase 1 Retarget | Checksum: e51a8835
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.319 . Memory (MB): peak = 1195.266 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.288 . Memory (MB): peak = 1177.816 ; gain = 0.000
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 493991a2
+Phase 2 Constant propagation | Checksum: e51a8835
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.413 . Memory (MB): peak = 1195.266 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.370 . Memory (MB): peak = 1177.816 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 7a10731e
+Phase 3 Sweep | Checksum: 1474009fe
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.625 . Memory (MB): peak = 1195.266 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.565 . Memory (MB): peak = 1177.816 ; gain = 0.000
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 42 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 7a10731e
+Phase 4 BUFG optimization | Checksum: 1474009fe
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.961 . Memory (MB): peak = 1195.266 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.833 . Memory (MB): peak = 1177.816 ; gain = 0.000
 INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
 
 Phase 5 Shift Register Optimization
-Phase 5 Shift Register Optimization | Checksum: 7a10731e
+Phase 5 Shift Register Optimization | Checksum: 1474009fe
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1195.266 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.876 . Memory (MB): peak = 1177.816 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1195.266 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 7a10731e
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1177.816 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1474009fe
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1195.266 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.996 . Memory (MB): peak = 1177.816 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.627 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.758 | TNS=0.000 |
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
@@ -108,42 +109,44 @@ INFO: [Pwropt 34-10] Applying ODC optimizations ...
 Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 70 BRAM(s) out of a total of 133 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 196 newly gated: 0 Total Ports: 266
-Number of Flops added for Enable Generation: 9
+Number of BRAM Ports augmented: 126 newly gated: 0 Total Ports: 266
+Number of Flops added for Enable Generation: 18
 
-Ending PowerOpt Patch Enables Task | Checksum: dce3a50c
+Ending PowerOpt Patch Enables Task | Checksum: af98367a
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.964 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Ending Power Optimization Task | Checksum: dce3a50c
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.933 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Ending Power Optimization Task | Checksum: af98367a
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1559.063 ; gain = 363.797
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 1558.734 ; gain = 380.918
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 1 Remap
-Phase 1 Remap | Checksum: 168eec625
+Phase 1 Remap | Checksum: c1cdea8e
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.676 . Memory (MB): peak = 1559.063 ; gain = 0.000
-INFO: [Opt 31-389] Phase Remap created 65 cells and removed 132 cells
-Ending Logic Optimization Task | Checksum: 168eec625
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.679 . Memory (MB): peak = 1558.734 ; gain = 0.000
+INFO: [Opt 31-389] Phase Remap created 126 cells and removed 252 cells
+Ending Logic Optimization Task | Checksum: c1cdea8e
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.693 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.695 . Memory (MB): peak = 1558.734 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-34 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+31 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1559.063 ; gain = 377.023
+opt_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 1558.734 ; gain = 398.441
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1559.063 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/mse_mandelbrot_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 1558.734 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/mse_mandelbrot_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file mse_mandelbrot_drc_opted.rpt -pb mse_mandelbrot_drc_opted.pb -rpx mse_mandelbrot_drc_opted.rpx
 Command: report_drc -file mse_mandelbrot_drc_opted.rpt -pb mse_mandelbrot_drc_opted.pb -rpx mse_mandelbrot_drc_opted.rpx
-INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/mse_mandelbrot_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/mse_mandelbrot_drc_opted.rpt.
 report_drc completed successfully
 INFO: [Chipscope 16-241] No debug cores found in the current design.
 Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
@@ -206,77 +209,77 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 10a81ff2a
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b29098ed
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1558.734 ; gain = 0.000
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1b8ebdb02
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d7c33aa8
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 1d27bbf1f
+Phase 1.3 Build Placer Netlist Model | Checksum: 193583e31
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 1d27bbf1f
+Phase 1.4 Constrain Clocks/Macros | Checksum: 193583e31
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 1d27bbf1f
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 193583e31
 
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 297fec8b7
+Phase 2 Global Placement | Checksum: 1e5cb8c0c
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 297fec8b7
+Phase 3.1 Commit Multi Column Macros | Checksum: 1e5cb8c0c
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2b2f42eb8
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 24c13e326
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 2bf461b8e
+Phase 3.3 Area Swap Optimization | Checksum: 1ee3733fa
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 2bf461b8e
+Phase 3.4 Pipeline Register Optimization | Checksum: 1ee3733fa
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 3.5 Small Shape Detail Placement
-Phase 3.5 Small Shape Detail Placement | Checksum: 250c8b565
+Phase 3.5 Small Shape Detail Placement | Checksum: 10e7ab596
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 3.6 Re-assign LUT pins
-Phase 3.6 Re-assign LUT pins | Checksum: 1b50cba18
+Phase 3.6 Re-assign LUT pins | Checksum: 1bc72736d
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 3.7 Pipeline Register Optimization
-Phase 3.7 Pipeline Register Optimization | Checksum: 1b50cba18
+Phase 3.7 Pipeline Register Optimization | Checksum: 1bc72736d
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1b50cba18
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1bc72736d
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -284,58 +287,58 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 101e32693
+Post Placement Optimization Initialization | Checksum: 2376886ca
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
 INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 101e32693
+Phase 4.1.1.1 BUFG Insertion | Checksum: 2376886ca
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1559.063 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=1.727. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 1b6f274af
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1558.734 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.644. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 17704781a
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 1b6f274af
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 17704781a
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 1b6f274af
+Phase 4.2 Post Placement Cleanup | Checksum: 17704781a
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 1b6f274af
+Phase 4.3 Placer Reporting | Checksum: 17704781a
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 20ae8a4c1
+Phase 4.4 Final Placement Cleanup | Checksum: 1857a5c21
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 20ae8a4c1
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1857a5c21
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Ending Placer Task | Checksum: 11d42bb5b
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Ending Placer Task | Checksum: 1796972ff
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:21 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1558.734 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-56 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+55 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 1559.063 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1558.734 ; gain = 0.000
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.649 . Memory (MB): peak = 1559.063 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/mse_mandelbrot_placed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.425 . Memory (MB): peak = 1558.734 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/mse_mandelbrot_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file mse_mandelbrot_io_placed.rpt
-report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1559.063 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1558.734 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file mse_mandelbrot_utilization_placed.rpt -pb mse_mandelbrot_utilization_placed.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.198 . Memory (MB): peak = 1559.063 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1558.734 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file mse_mandelbrot_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1559.063 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1558.734 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
@@ -347,111 +350,110 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 30c1d71e ConstDB: 0 ShapeSum: ec80e43d RouteDB: 0
+Checksum: PlaceDB: aeaea243 ConstDB: 0 ShapeSum: cabad0bc RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: d941b2a0
+Phase 1 Build RT Design | Checksum: 11dbf3d66
 
-Time (s): cpu = 00:01:27 ; elapsed = 00:01:17 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Post Restoration Checksum: NetGraph: 75959d11 NumContArr: 63ac158f Constraints: 0 Timing: 0
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:16 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Post Restoration Checksum: NetGraph: e02049c7 NumContArr: 3d9ef39f Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: d941b2a0
+Phase 2.1 Create Timer | Checksum: 11dbf3d66
 
-Time (s): cpu = 00:01:27 ; elapsed = 00:01:17 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:16 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: d941b2a0
+Phase 2.2 Fix Topology Constraints | Checksum: 11dbf3d66
 
-Time (s): cpu = 00:01:27 ; elapsed = 00:01:17 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:16 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: d941b2a0
+Phase 2.3 Pre Route Cleanup | Checksum: 11dbf3d66
 
-Time (s): cpu = 00:01:27 ; elapsed = 00:01:17 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:26 ; elapsed = 00:01:16 . Memory (MB): peak = 1558.734 ; gain = 0.000
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 125cd2e2a
+Phase 2.4 Update Timing | Checksum: 1948af7ce
 
-Time (s): cpu = 00:01:33 ; elapsed = 00:01:22 . Memory (MB): peak = 1559.063 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.992  | TNS=0.000  | WHS=-0.196 | THS=-7.260 |
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:20 . Memory (MB): peak = 1558.734 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.766  | TNS=0.000  | WHS=-0.127 | THS=-6.433 |
 
-Phase 2 Router Initialization | Checksum: 650208b2
+Phase 2 Router Initialization | Checksum: 1dbf9ff42
 
-Time (s): cpu = 00:01:33 ; elapsed = 00:01:22 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:21 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 124b683bc
+Phase 3 Initial Routing | Checksum: 28c5e74d7
 
-Time (s): cpu = 00:01:41 ; elapsed = 00:01:26 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:25 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 231
- Number of Nodes with overlaps = 71
- Number of Nodes with overlaps = 11
- Number of Nodes with overlaps = 5
- Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 190
+ Number of Nodes with overlaps = 58
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 4
  Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.305  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.209  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 1941b9533
+Phase 4.1 Global Iteration 0 | Checksum: 1c4316c00
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:32 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Phase 4 Rip-up And Reroute | Checksum: 1941b9533
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:28 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: 1c4316c00
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:32 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:28 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1613009cb
+Phase 5.1.1 Update Timing | Checksum: 15d17b418
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:33 . Memory (MB): peak = 1559.063 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.305  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.209  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 1613009cb
+Phase 5.1 Delay CleanUp | Checksum: 15d17b418
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:33 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 1613009cb
+Phase 5.2 Clock Skew Optimization | Checksum: 15d17b418
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:33 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Phase 5 Delay and Skew Optimization | Checksum: 1613009cb
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: 15d17b418
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:01:33 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 188c90d5b
+Phase 6.1.1 Update Timing | Checksum: 1836891d3
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:33 . Memory (MB): peak = 1559.063 ; gain = 0.000
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.305  | TNS=0.000  | WHS=0.137  | THS=0.000  |
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.209  | TNS=0.000  | WHS=0.107  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 125739d13
+Phase 6.1 Hold Fix Iter | Checksum: 12db4cf00
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:33 . Memory (MB): peak = 1559.063 ; gain = 0.000
-Phase 6 Post Hold Fix | Checksum: 125739d13
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 12db4cf00
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:33 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.385849 %
-  Global Horizontal Routing Utilization  = 0.412095 %
+  Global Vertical Routing Utilization    = 0.377751 %
+  Global Horizontal Routing Utilization  = 0.375149 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -460,56 +462,56 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 19d0cbaee
+Phase 7 Route finalize | Checksum: 1580cdb0e
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:33 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 19d0cbaee
+Phase 8 Verifying routed nets | Checksum: 1580cdb0e
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:33 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1341167ce
+Phase 9 Depositing Routes | Checksum: 1261548b0
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:34 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=1.305  | TNS=0.000  | WHS=0.137  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.209  | TNS=0.000  | WHS=0.107  | THS=0.000  |
 
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 1341167ce
+Phase 10 Post Router Timing | Checksum: 1261548b0
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:34 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:01:51 ; elapsed = 00:01:34 . Memory (MB): peak = 1559.063 ; gain = 0.000
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:29 . Memory (MB): peak = 1558.734 ; gain = 0.000
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-73 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+72 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:01:55 ; elapsed = 00:01:36 . Memory (MB): peak = 1559.063 ; gain = 0.000
+route_design: Time (s): cpu = 00:01:49 ; elapsed = 00:01:32 . Memory (MB): peak = 1558.734 ; gain = 0.000
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.822 . Memory (MB): peak = 1559.063 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/mse_mandelbrot_routed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.819 . Memory (MB): peak = 1558.734 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/mse_mandelbrot_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file mse_mandelbrot_drc_routed.rpt -pb mse_mandelbrot_drc_routed.pb -rpx mse_mandelbrot_drc_routed.rpx
 Command: report_drc -file mse_mandelbrot_drc_routed.rpt -pb mse_mandelbrot_drc_routed.pb -rpx mse_mandelbrot_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/mse_mandelbrot_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/mse_mandelbrot_drc_routed.rpt.
 report_drc completed successfully
 INFO: [runtcl-4] Executing : report_methodology -file mse_mandelbrot_methodology_drc_routed.rpt -pb mse_mandelbrot_methodology_drc_routed.pb -rpx mse_mandelbrot_methodology_drc_routed.rpx
 Command: report_methodology -file mse_mandelbrot_methodology_drc_routed.rpt -pb mse_mandelbrot_methodology_drc_routed.pb -rpx mse_mandelbrot_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/mse_mandelbrot_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/mse_mandelbrot_methodology_drc_routed.rpt.
 report_methodology completed successfully
 INFO: [runtcl-4] Executing : report_power -file mse_mandelbrot_power_routed.rpt -pb mse_mandelbrot_power_summary_routed.pb -rpx mse_mandelbrot_power_routed.rpx
 Command: report_power -file mse_mandelbrot_power_routed.rpt -pb mse_mandelbrot_power_summary_routed.pb -rpx mse_mandelbrot_power_routed.rpx
@@ -517,7 +519,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-85 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+84 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file mse_mandelbrot_route_status.rpt -pb mse_mandelbrot_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file mse_mandelbrot_timing_summary_routed.rpt -rpx mse_mandelbrot_timing_summary_routed.rpx -warn_on_violation 
@@ -526,50 +528,50 @@ INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum o
 INFO: [runtcl-4] Executing : report_incremental_reuse -file mse_mandelbrot_incremental_reuse_routed.rpt
 INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
 INFO: [runtcl-4] Executing : report_clock_utilization -file mse_mandelbrot_clock_utilization_routed.rpt
-INFO: [Common 17-206] Exiting Vivado at Sat May  5 10:07:17 2018...
+INFO: [Common 17-206] Exiting Vivado at Sat May  5 17:59:14 2018...
 #-----------------------------------------------------------
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat May  5 10:08:45 2018
-# Process ID: 6712
-# Current directory: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1
+# Start of session at: Sat May  5 17:59:36 2018
+# Process ID: 16932
+# Current directory: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1
 # Command line: vivado.exe -log mse_mandelbrot.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mse_mandelbrot.tcl -notrace
-# Log file: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/mse_mandelbrot.vdi
-# Journal file: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1\vivado.jou
+# Log file: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/mse_mandelbrot.vdi
+# Journal file: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source mse_mandelbrot.tcl -notrace
 Command: open_checkpoint mse_mandelbrot_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 226.516 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 201 Unisim elements for replacement
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 226.762 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 185 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2017.4
 INFO: [Device 21-403] Loading part xc7a200tsbg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/ClkSys100MhzxC' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/.Xil/Vivado-640-Vivien-HP/dcp3/clk_vga_hdmi_1024x600.edf:322]
-Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/.Xil/Vivado-6712-Vivien-HP/dcp1/mse_mandelbrot_board.xdc]
-Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/.Xil/Vivado-6712-Vivien-HP/dcp1/mse_mandelbrot_board.xdc]
-Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/.Xil/Vivado-6712-Vivien-HP/dcp1/mse_mandelbrot_early.xdc]
-INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc:57]
-get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1161.082 ; gain = 567.508
-Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/.Xil/Vivado-6712-Vivien-HP/dcp1/mse_mandelbrot_early.xdc]
-Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/.Xil/Vivado-6712-Vivien-HP/dcp1/mse_mandelbrot.xdc]
-Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/.Xil/Vivado-6712-Vivien-HP/dcp1/mse_mandelbrot.xdc]
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/ClkSys100MhzxC' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [C:/Users/Vivien/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20868-Vivien-HP/dcp3/clk_vga_hdmi_1024x600.edf:322]
+Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-16932-Vivien-HP/dcp1/mse_mandelbrot_board.xdc]
+Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-16932-Vivien-HP/dcp1/mse_mandelbrot_board.xdc]
+Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-16932-Vivien-HP/dcp1/mse_mandelbrot_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc:57]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1160.590 ; gain = 567.313
+Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-16932-Vivien-HP/dcp1/mse_mandelbrot_early.xdc]
+Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-16932-Vivien-HP/dcp1/mse_mandelbrot.xdc]
+Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/.Xil/Vivado-16932-Vivien-HP/dcp1/mse_mandelbrot.xdc]
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.560 . Memory (MB): peak = 1166.238 ; gain = 5.156
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.561 . Memory (MB): peak = 1166.238 ; gain = 5.156
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.536 . Memory (MB): peak = 1165.836 ; gain = 5.059
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.537 . Memory (MB): peak = 1165.836 ; gain = 5.059
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
-open_checkpoint: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1166.852 ; gain = 940.336
+open_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1166.285 ; gain = 939.523
 Command: write_bitstream -force mse_mandelbrot.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
@@ -600,14 +602,11 @@ WARNING: [DRC DPIP-1] Input pipelining: DSP mandelbrot_calculatorxB.mandelbrot_c
 WARNING: [DRC DPIP-1] Input pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 input mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPIP-1] Input pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 input mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 input mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 output mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 output mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 output mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPIP-1] Input pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_s0 input mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_s0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_s0 input mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_s0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 multiplier stage mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 multiplier stage mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0 multiplier stage mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_new_s0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_s0 multiplier stage mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_s0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRARDADDR[0] (net: blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[0]) which is driven by a register (ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/posx_i_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRARDADDR[10] (net: blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/posy_i_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRARDADDR[11] (net: blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[11]) which is driven by a register (ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/posy_i_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -648,7 +647,7 @@ WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 blk_mem_bramxB
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram has an input control pin blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram/ADDRBWRADDR[13] (net: blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/addrb[12]) which is driven by a register (HdmixI/VgaxI/VgaControlerxI/VCountxD_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram has an input control pin blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram/ADDRBWRADDR[9] (net: blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/addrb[8]) which is driven by a register (HdmixI/VgaxI/VgaControlerxI/HCountxD_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram has an input control pin blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.TRUE_DP.SIMPLE_PRIM18.ram/ADDRBWRADDR[9] (net: blk_mem_bramxB.blk_mem_bramxI/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/addrb[8]) which is driven by a register (HdmixI/VgaxI/VgaControlerxI/VidOnxS_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 63 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 60 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
@@ -661,9 +660,9 @@ Creating bitstream...
 Writing bitstream ./mse_mandelbrot.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sat May  5 10:10:06 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sat May  5 18:01:00 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-22 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
+22 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:59 ; elapsed = 00:00:50 . Memory (MB): peak = 1707.266 ; gain = 540.414
-INFO: [Common 17-206] Exiting Vivado at Sat May  5 10:10:06 2018...
+write_bitstream: Time (s): cpu = 00:01:01 ; elapsed = 00:00:51 . Memory (MB): peak = 1703.957 ; gain = 537.422
+INFO: [Common 17-206] Exiting Vivado at Sat May  5 18:01:00 2018...

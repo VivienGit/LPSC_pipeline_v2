@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc rfile:../../../mandelbrot_pipeline.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc rfile:../../../Mandelbrot_pipeline_V2.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN R4 IOSTANDARD LVCMOS33} [get_ports ClkSys100MhzxC]
 set_property src_info {type:XDC file:1 line:41 export:INPUT save:INPUT read:READ} [current_design]

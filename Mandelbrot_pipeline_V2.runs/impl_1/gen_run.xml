@@ -1,65 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1525507433">
-  <File Type="PWROPT-DCP" Name="mse_mandelbrot_pwropt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1525535746">
+  <File Type="PA-DCP" Name="mse_mandelbrot.dcp"/>
+  <File Type="OPT-DCP" Name="mse_mandelbrot_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="mse_mandelbrot.hwdef"/>
   <File Type="ROUTE-PWR" Name="mse_mandelbrot_power_routed.rpt"/>
   <File Type="PA-TCL" Name="mse_mandelbrot.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="mse_mandelbrot_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="mse_mandelbrot_reports.tcl"/>
   <File Type="BG-DRC" Name="mse_mandelbrot.drc"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="mse_mandelbrot_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="mse_mandelbrot_timing_summary_init.rpt"/>
-  <File Type="OPT-HWDEF" Name="mse_mandelbrot.hwdef"/>
-  <File Type="OPT-DCP" Name="mse_mandelbrot_opt.dcp"/>
   <File Type="OPT-DRC" Name="mse_mandelbrot_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="mse_mandelbrot_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DRC" Name="mse_mandelbrot_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="mse_mandelbrot_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="mse_mandelbrot_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="mse_mandelbrot_placed.dcp"/>
   <File Type="PLACE-IO" Name="mse_mandelbrot_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="mse_mandelbrot_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="mse_mandelbrot_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="mse_mandelbrot_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="mse_mandelbrot_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="mse_mandelbrot_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="mse_mandelbrot_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="mse_mandelbrot_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="mse_mandelbrot_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="mse_mandelbrot_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="mse_mandelbrot_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="mse_mandelbrot_drc_physopted.rpt"/>
   <File Type="BG-BIT" Name="mse_mandelbrot.bit"/>
-  <File Type="PHYSOPT-TIMING" Name="mse_mandelbrot_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="mse_mandelbrot_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="mse_mandelbrot_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="mse_mandelbrot_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="mse_mandelbrot_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="mse_mandelbrot_drc_routed.pb"/>
-  <File Type="BITSTR-MSK" Name="mse_mandelbrot.msk"/>
   <File Type="ROUTE-DRC-RPX" Name="mse_mandelbrot_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="mse_mandelbrot.bgn"/>
+  <File Type="BITSTR-MSK" Name="mse_mandelbrot.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="mse_mandelbrot_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-RBT" Name="mse_mandelbrot.rbt"/>
+  <File Type="BG-BGN" Name="mse_mandelbrot.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mse_mandelbrot_methodology_drc_routed.rpx"/>
-  <File Type="BG-BIN" Name="mse_mandelbrot.bin"/>
+  <File Type="BITSTR-RBT" Name="mse_mandelbrot.rbt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mse_mandelbrot_methodology_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="mse_mandelbrot.bin"/>
   <File Type="ROUTE-PWR-RPX" Name="mse_mandelbrot_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="mse_mandelbrot_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="mse_mandelbrot_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="mse_mandelbrot_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="mse_mandelbrot_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="mse_mandelbrot_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="mse_mandelbrot_incremental_reuse_routed.rpt"/>
-  <File Type="RDI-RDI" Name="mse_mandelbrot.vdi"/>
   <File Type="ROUTE-CLK" Name="mse_mandelbrot_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="mse_mandelbrot.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="mse_mandelbrot_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mse_mandelbrot_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mse_mandelbrot_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mse_mandelbrot_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mse_mandelbrot_timing_summary_postroute_physopted.rpx"/>
   <File Type="BITSTR-NKY" Name="mse_mandelbrot.nky"/>
   <File Type="BITSTR-BMM" Name="mse_mandelbrot_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="mse_mandelbrot.mmi"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="mse_mandelbrot.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="mse_mandelbrot.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>

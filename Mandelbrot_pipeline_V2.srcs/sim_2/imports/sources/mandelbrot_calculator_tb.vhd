@@ -41,7 +41,7 @@ architecture testbench of mandelbrot_calculator_tb is
   -- Input/output of the DUV
   signal clk_sti          : std_logic;
   signal rst_sti          : std_logic;
-  signal ready_obs        : std_logic;
+  signal new_val_obs      : std_logic;
   signal start_sti        : std_logic;
   signal finished_obs     : std_logic;
   signal c_real_sti       : std_logic_vector(SIZE-1 downto 0);
@@ -72,9 +72,9 @@ architecture testbench of mandelbrot_calculator_tb is
     port(
       clk_i         : in std_logic;
       rst_i         : in std_logic;
-      ready_o       : out std_logic;
-      start_i       : in std_logic;
+      new_val_o     : out std_logic;
       finished_o    : out std_logic;
+      start_i       : in std_logic;
       c_real_i      : in std_logic_vector(SIZE-1 downto 0);
       c_imaginary_i : in std_logic_vector(SIZE-1 downto 0);
       z_real_o      : out std_logic_vector(SIZE-1 downto 0);
@@ -100,7 +100,7 @@ begin
   port map (
     clk_i         => clk_sti,
     rst_i         => rst_sti,
-    ready_o       => ready_obs,
+    new_val_o     => new_val_obs,
     start_i       => start_sti,
     finished_o    => finished_obs,
     c_real_i      => c_real_sti,
@@ -128,8 +128,9 @@ begin
     c_imaginary_sti <= "0000" & "000000000000";  -- 0    --> 0
 
     -- End of the reset
-    wait for 20 ns;
+    wait for 19 ns;
     rst_sti <= '0';
+    wait for 1  ns;
 
     -- Start signal
     wait for 10 ns;

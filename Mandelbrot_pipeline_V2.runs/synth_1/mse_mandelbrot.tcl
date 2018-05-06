@@ -16,7 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 set_msg_config  -ruleid {10}  -id {Constraints 18-619}  -string {{WARNING: [Constraints 18-619] A clock with name 'ClkSys100MhzxC' already exists, overwriting the previous clock with the same name. [/home/joco/Documents/cours/FPGA/master/nexys_video/mse_mandelbrot/mse_mandelbrot.runs/synth_1/.Xil/Vivado-25469-t450s-debian/dcp5/clk_hdmi_1024x600_in_context.xdc:1]}}  -suppress 
 set_msg_config  -ruleid {11}  -id {Timing 38-316}  -string {{WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'BramVideoMemory1024x768x9xI' at clock pin 'clka' is different from the actual clock period '19.531', this can lead to different synthesis results.}}  -suppress 
 set_msg_config  -ruleid {12}  -id {Synth 8-3917}  -string {{WARNING: [Synth 8-3917] design mse_mandelbrot has port HdmiTxRsclxSO driven by constant 1}}  -suppress 
@@ -142,35 +141,35 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.cache/wt [current_project]
-set_property parent.project_path C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.cache/wt [current_project]
+set_property parent.project_path C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/new/ComplexValueGenerator.vhd
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/imports/src/hdmi_interface_pkg.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/ComplexValueGenerator.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/hdmi_interface_pkg.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/imports/src/vga_stripes.vhd
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/imports/src/vga_controler.vhd
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/imports/src/vga.vhd
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/imports/src/tmds_encoder.vhd
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/imports/src/serializer_10_to_1.vhd
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/imports/src/vga_to_hdmi.vhd
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/imports/src/hdmi.vhd
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/new/mandelbrot_calculator.vhd
-  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/imports/src/mse_mandelbrot.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/vga_stripes.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/vga_controler.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/vga.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/tmds_encoder.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/serializer_10_to_1.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/vga_to_hdmi.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/hdmi.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd
+  C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/mse_mandelbrot.vhd
 }
-read_ip -quiet C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xci
-set_property used_in_implementation false [get_files -all c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600_ooc.xdc]
+read_ip -quiet C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xci
+set_property used_in_implementation false [get_files -all c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/ip/clk_vga_hdmi_1024x600/clk_vga_hdmi_1024x600_ooc.xdc]
 
-read_ip -quiet C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/blk_mem_bram/blk_mem_bram.xci
-set_property used_in_implementation false [get_files -all c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/sources_1/ip/blk_mem_bram/blk_mem_bram_ooc.xdc]
+read_ip -quiet C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/ip/blk_mem_bram/blk_mem_bram.xci
+set_property used_in_implementation false [get_files -all c:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/ip/blk_mem_bram/blk_mem_bram_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -180,8 +179,8 @@ set_property used_in_implementation false [get_files -all c:/Users/Vivien/Docume
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline/mandelbrot_pipeline/mandelbrot_pipeline.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc]
+read_xdc C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc]
 
 
 synth_design -top mse_mandelbrot -part xc7a200tsbg484-1

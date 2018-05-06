@@ -157,9 +157,9 @@ architecture rtl of mse_mandelbrot is
         port(
             clk_i         : in std_logic;
             rst_i         : in std_logic;
-            ready_o       : out std_logic;
-            start_i       : in std_logic;
+            new_val_o     : out std_logic;
             finished_o    : out std_logic;
+            start_i       : in std_logic;
             c_real_i      : in std_logic_vector(SIZE-1 downto 0);
             c_imaginary_i : in std_logic_vector(SIZE-1 downto 0);
             z_real_o      : out std_logic_vector(SIZE-1 downto 0);
@@ -207,10 +207,7 @@ architecture rtl of mse_mandelbrot is
     
     signal finished_s     : std_logic;
     
-    signal ready_s        : std_logic;
-    signal start_s        : std_logic;
-    signal z_real_s       : std_logic_vector(C_DATA_SIZE-1 downto 0);
-    signal z_imaginary_s  : std_logic_vector(C_DATA_SIZE-1 downto 0);
+    signal new_val_s      : std_logic;
     signal iterations_s   : std_logic_vector(C_ITER_SIZE-1 downto 0);
     signal calc_add_x_s   : std_logic_vector(C_SCREEN_RES-1 downto 0);
     signal calc_add_y_s   : std_logic_vector(C_SCREEN_RES-1 downto 0);
@@ -346,7 +343,7 @@ begin  -- architecture rtl
        port map (
            clk          => ClkSys100MhzxC,
            reset        => RstxR,
-           next_value   => finished_s,
+           next_value   => new_val_s,
            c_real       => c_real_s,
            c_imaginary  => c_imaginary_s,
            X_screen     => X_screen_s,
@@ -372,13 +369,13 @@ begin  -- architecture rtl
     port map(
         clk_i         => ClkSys100MhzxC,
         rst_i         => RstxR,
-        ready_o       => ready_s,
-        start_i       => ready_s,
+        new_val_o     => new_val_s,
         finished_o    => finished_s,
+        start_i       => new_val_s,
         c_real_i      => c_real_s,
         c_imaginary_i => c_imaginary_s,
-        z_real_o      => z_real_s,
-        z_imaginary_o => z_imaginary_s,
+        z_real_o      => open,
+        z_imaginary_o => open,
         iterations_o  => iterations_s,
         x_o           => calc_add_x_s, --> pour la BRAM en adress
         y_o           => calc_add_y_s,  --> pour la BRAM en adress
