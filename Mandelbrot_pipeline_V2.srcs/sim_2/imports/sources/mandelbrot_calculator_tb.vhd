@@ -126,6 +126,8 @@ begin
     -- Set the input values ---- should stop at 5
     c_real_sti <= "0000" & "100000000000";       -- 0.5  --> ~3.153320
     c_imaginary_sti <= "0000" & "000000000000";  -- 0    --> 0
+    --c_real_sti <= "0000" & "011000010100";      -- 0.3798828125     --> ~0.6
+    --c_imaginary_sti <= "0000" & "001100110011"; -- 0.199951171875   --> ~2.039
 
     -- End of the reset
     wait for 19 ns;

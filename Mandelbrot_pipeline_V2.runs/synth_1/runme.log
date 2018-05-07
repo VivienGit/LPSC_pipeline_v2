@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1212 
+INFO: Helper process launched with PID 9248 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 337.141 ; gain = 95.539
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 336.734 ; gain = 95.504
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'mse_mandelbrot' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/mse_mandelbrot.vhd:51]
 	Parameter C_CHANNEL_NUMBER bound to: 4 - type: integer 
@@ -27,8 +27,8 @@ INFO: [Synth 8-638] synthesizing module 'hdmi' [C:/Users/Vivien/Documents/Master
 	Parameter C_VGA_CONFIG bound to: 192'b000001000000000000000010010110000000000010100000000000001000110000000000000011000000000000010100000000000001010000000000000000110000010101000000000000100111101100000000000000000000000000000000 
 	Parameter C_RESOLUTION bound to: 1024x600 - type: string 
 INFO: [Synth 8-113] binding component instance 'BUFGClkSysToClkVgaHdmixI' to cell 'BUFG' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/hdmi.vhd:363]
-INFO: [Synth 8-3491] module 'clk_vga_hdmi_1024x600' declared at 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-16832-Vivien-HP/realtime/clk_vga_hdmi_1024x600_stub.vhdl:5' bound to instance 'ClkVgaHdmi1024x600xI' of component 'clk_vga_hdmi_1024x600' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/hdmi.vhd:380]
-INFO: [Synth 8-638] synthesizing module 'clk_vga_hdmi_1024x600' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-16832-Vivien-HP/realtime/clk_vga_hdmi_1024x600_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'clk_vga_hdmi_1024x600' declared at 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-972-Vivien-HP/realtime/clk_vga_hdmi_1024x600_stub.vhdl:5' bound to instance 'ClkVgaHdmi1024x600xI' of component 'clk_vga_hdmi_1024x600' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/hdmi.vhd:380]
+INFO: [Synth 8-638] synthesizing module 'clk_vga_hdmi_1024x600' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-972-Vivien-HP/realtime/clk_vga_hdmi_1024x600_stub.vhdl:16]
 INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/vga.vhd:47]
 	Parameter C_DATA_SIZE bound to: 16 - type: integer 
 	Parameter C_PIXEL_SIZE bound to: 8 - type: integer 
@@ -145,82 +145,28 @@ INFO: [Synth 8-638] synthesizing module 'mandelbrot_calculator' [C:/Users/Vivien
 	Parameter ITER_SIZE bound to: 7 - type: integer 
 	Parameter X_ADD_SIZE bound to: 10 - type: integer 
 	Parameter Y_ADD_SIZE bound to: 10 - type: integer 
-WARNING: [Synth 8-614] signal 'pipe_count_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:132]
-WARNING: [Synth 8-614] signal 'z_ri_big_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:132]
-WARNING: [Synth 8-614] signal 'iterations_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:132]
-INFO: [Synth 8-226] default block is never used [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:226]
-WARNING: [Synth 8-614] signal 'x_i' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:216]
-WARNING: [Synth 8-614] signal 'pipe_count_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:216]
-WARNING: [Synth 8-614] signal 'y_i' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:216]
-WARNING: [Synth 8-614] signal 'one_is_finished_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:216]
-WARNING: [Synth 8-614] signal 'x_address_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:216]
-WARNING: [Synth 8-614] signal 'y_address_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:216]
-WARNING: [Synth 8-6014] Unused sequential element iterations_s_reg[2] was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:171]
-WARNING: [Synth 8-6014] Unused sequential element iterations_s_reg[1] was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:171]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zn1_imag_big_s_reg' and it is trimmed from '32' to '28' bits. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:155]
-WARNING: [Synth 8-3936] Found unconnected internal register 'zn1_real_big_s_reg' and it is trimmed from '32' to '28' bits. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:148]
-
-Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
-	1: Unable to determine number of words or word size in RAM. 
-	2: No valid read/write found for RAM. 
-RAM dissolved into registers
-
-Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
-	1: Unable to determine number of words or word size in RAM. 
-	2: No valid read/write found for RAM. 
-RAM dissolved into registers
-WARNING: [Synth 8-3848] Net c_real_s in module/entity mandelbrot_calculator does not have driver. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:81]
-WARNING: [Synth 8-3848] Net c_real_s in module/entity mandelbrot_calculator does not have driver. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:81]
-WARNING: [Synth 8-3848] Net c_real_s in module/entity mandelbrot_calculator does not have driver. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:81]
-WARNING: [Synth 8-3848] Net c_imag_s in module/entity mandelbrot_calculator does not have driver. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:82]
-WARNING: [Synth 8-3848] Net c_imag_s in module/entity mandelbrot_calculator does not have driver. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:82]
-WARNING: [Synth 8-3848] Net c_imag_s in module/entity mandelbrot_calculator does not have driver. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:82]
-WARNING: [Synth 8-3848] Net iterations_o in module/entity mandelbrot_calculator does not have driver. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:51]
+WARNING: [Synth 8-614] signal 'c_real_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:145]
+WARNING: [Synth 8-614] signal 'z_ri_big_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:145]
+WARNING: [Synth 8-614] signal 'c_imag_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:145]
+WARNING: [Synth 8-614] signal 'iterations_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:145]
+WARNING: [Synth 8-614] signal 'idle_reset_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:187]
+WARNING: [Synth 8-614] signal 'x_i' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:237]
+WARNING: [Synth 8-614] signal 'pipe_count_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:237]
+WARNING: [Synth 8-614] signal 'y_i' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:237]
+WARNING: [Synth 8-614] signal 'c_real_singel_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:237]
+WARNING: [Synth 8-614] signal 'c_imag_singel_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:237]
+WARNING: [Synth 8-614] signal 'iterations_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:237]
+WARNING: [Synth 8-614] signal 'x_address_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:237]
+WARNING: [Synth 8-614] signal 'y_address_s' is read in the process but is not in the sensitivity list [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:237]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zn1_imag_big_s_reg' and it is trimmed from '32' to '28' bits. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:175]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zn1_real_big_s_reg' and it is trimmed from '32' to '28' bits. [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:164]
 INFO: [Synth 8-256] done synthesizing module 'mandelbrot_calculator' (9#1) [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:60]
-INFO: [Synth 8-3491] module 'blk_mem_bram' declared at 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-16832-Vivien-HP/realtime/blk_mem_bram_stub.vhdl:5' bound to instance 'blk_mem_bramxI' of component 'blk_mem_bram' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/mse_mandelbrot.vhd:393]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_bram' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-16832-Vivien-HP/realtime/blk_mem_bram_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'blk_mem_bram' declared at 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-972-Vivien-HP/realtime/blk_mem_bram_stub.vhdl:5' bound to instance 'blk_mem_bramxI' of component 'blk_mem_bram' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/mse_mandelbrot.vhd:393]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_bram' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-972-Vivien-HP/realtime/blk_mem_bram_stub.vhdl:21]
 INFO: [Synth 8-256] done synthesizing module 'mse_mandelbrot' (10#1) [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/mse_mandelbrot.vhd:51]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port iterations_o[6]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port iterations_o[5]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port iterations_o[4]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port iterations_o[3]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port iterations_o[2]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port iterations_o[1]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port iterations_o[0]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[15]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[14]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[13]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[12]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[11]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[10]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[9]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[8]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[7]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[6]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[5]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[4]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[3]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[2]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[1]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_real_i[0]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[15]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[14]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[13]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[12]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[11]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[10]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[9]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[8]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[7]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[6]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[5]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[4]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[3]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[2]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[1]
-WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port c_imaginary_i[0]
+WARNING: [Synth 8-3331] design mandelbrot_calculator has unconnected port start_i
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 390.125 ; gain = 148.523
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 389.980 ; gain = 148.750
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -230,7 +176,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 390.125 ; gain = 148.523
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 389.980 ; gain = 148.750
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -239,10 +185,10 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-16832-Vivien-HP/dcp2/clk_vga_hdmi_1024x600_in_context.xdc] for cell 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI'
-Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-16832-Vivien-HP/dcp2/clk_vga_hdmi_1024x600_in_context.xdc] for cell 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI'
-Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-16832-Vivien-HP/dcp3/blk_mem_bram_in_context.xdc] for cell 'blk_mem_bramxB.blk_mem_bramxI'
-Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-16832-Vivien-HP/dcp3/blk_mem_bram_in_context.xdc] for cell 'blk_mem_bramxB.blk_mem_bramxI'
+Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-972-Vivien-HP/dcp2/clk_vga_hdmi_1024x600_in_context.xdc] for cell 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI'
+Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-972-Vivien-HP/dcp2/clk_vga_hdmi_1024x600_in_context.xdc] for cell 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI'
+Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-972-Vivien-HP/dcp3/blk_mem_bram_in_context.xdc] for cell 'blk_mem_bramxB.blk_mem_bramxI'
+Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/.Xil/Vivado-972-Vivien-HP/dcp3/blk_mem_bram_in_context.xdc] for cell 'blk_mem_bramxB.blk_mem_bramxI'
 Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc]
 Finished Parsing XDC File [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/constrs_1/imports/constr/Nexys-Video-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mse_mandelbrot_propImpl.xdc].
@@ -252,17 +198,17 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 771.988 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 772.582 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_bramxB.blk_mem_bramxI' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 771.988 ; gain = 530.387
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 772.582 ; gain = 531.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 771.988 ; gain = 530.387
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 772.582 ; gain = 531.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -270,7 +216,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for HdmixI/\ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for \blk_mem_bramxB.blk_mem_bramxI . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 771.988 ; gain = 530.387
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 772.582 ; gain = 531.352
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "VCountxD" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "VgaSyncxS[HSyncxS]" won't be mapped to RAM because it is too sparse
@@ -283,19 +229,39 @@ WARNING: [Synth 8-6014] Unused sequential element c_re_i_reg was removed.  [C:/U
 WARNING: [Synth 8-6014] Unused sequential element posx_i_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/ComplexValueGenerator.vhd:64]
 WARNING: [Synth 8-6014] Unused sequential element c_im_i_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/ComplexValueGenerator.vhd:63]
 WARNING: [Synth 8-6014] Unused sequential element posy_i_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/ComplexValueGenerator.vhd:65]
-INFO: [Synth 8-5545] ROM "iterations_s_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "iterations_s[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "x_address_s_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "x_address_s_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element iterations_s_reg[0] was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:171]
-WARNING: [Synth 8-6014] Unused sequential element pipe_count_s_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:179]
-WARNING: [Synth 8-327] inferring latch for variable 'x_address_s_reg[0]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:230]
-WARNING: [Synth 8-327] inferring latch for variable 'x_address_s_reg[1]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:230]
-WARNING: [Synth 8-327] inferring latch for variable 'x_address_s_reg[2]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:230]
-WARNING: [Synth 8-327] inferring latch for variable 'y_address_s_reg[0]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:231]
-WARNING: [Synth 8-327] inferring latch for variable 'y_address_s_reg[1]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:231]
-WARNING: [Synth 8-327] inferring latch for variable 'y_address_s_reg[2]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:231]
+INFO: [Synth 8-5545] ROM "x_address_s_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element iterations_s_reg[2] was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:191]
+WARNING: [Synth 8-6014] Unused sequential element iterations_s_reg[1] was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:191]
+WARNING: [Synth 8-6014] Unused sequential element iterations_s_reg[0] was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:191]
+WARNING: [Synth 8-6014] Unused sequential element pipe_count_s_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:201]
+INFO: [Synth 8-802] inferred FSM for state register 'current_states_reg' in module 'mandelbrot_calculator'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              idle_state |                              000 |                              000
+  three_free_pipes_state |                              001 |                              001
+    two_free_pipes_state |                              010 |                              010
+     one_free_pipe_state |                              011 |                              011
+    pipes_are_full_state |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_states_reg' using encoding 'sequential' in module 'mandelbrot_calculator'
+WARNING: [Synth 8-327] inferring latch for variable 'y_address_s_reg[0]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:259]
+WARNING: [Synth 8-327] inferring latch for variable 'y_address_s_reg[1]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:259]
+WARNING: [Synth 8-327] inferring latch for variable 'y_address_s_reg[2]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:259]
+WARNING: [Synth 8-327] inferring latch for variable 'c_real_s_reg[0]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:260]
+WARNING: [Synth 8-327] inferring latch for variable 'c_real_s_reg[1]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:260]
+WARNING: [Synth 8-327] inferring latch for variable 'c_real_s_reg[2]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:260]
+WARNING: [Synth 8-327] inferring latch for variable 'c_imag_s_reg[0]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'c_imag_s_reg[1]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'c_imag_s_reg[2]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'x_address_s_reg[0]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:258]
+WARNING: [Synth 8-327] inferring latch for variable 'x_address_s_reg[1]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:258]
+WARNING: [Synth 8-327] inferring latch for variable 'x_address_s_reg[2]' [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:258]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 771.988 ; gain = 530.387
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 772.582 ; gain = 531.352
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -313,7 +279,7 @@ Detailed RTL Component Info :
 	   2 Input     28 Bit       Adders := 2     
 	   2 Input     16 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 2     
-	   2 Input      7 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
 	   8 Input      4 Bit       Adders := 3     
 	   9 Input      4 Bit       Adders := 3     
 	   4 Input      4 Bit       Adders := 3     
@@ -324,26 +290,27 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 5     
 	               16 Bit    Registers := 4     
 	               10 Bit    Registers := 5     
-	                7 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
 	                4 Bit    Registers := 3     
-	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 6     
 	   3 Input     16 Bit        Muxes := 2     
-	   5 Input     10 Bit        Muxes := 6     
-	   4 Input     10 Bit        Muxes := 5     
+	   5 Input     10 Bit        Muxes := 8     
+	   4 Input     10 Bit        Muxes := 3     
 	   2 Input     10 Bit        Muxes := 11    
 	   3 Input     10 Bit        Muxes := 2     
 	   2 Input      9 Bit        Muxes := 6     
 	   2 Input      8 Bit        Muxes := 3     
-	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 12    
-	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 11    
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
 	   3 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -399,21 +366,23 @@ Detailed RTL Component Info :
 	   2 Input     33 Bit       Adders := 1     
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input     28 Bit       Adders := 2     
-	   2 Input      7 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
 +---Registers : 
 	               32 Bit    Registers := 5     
 	               16 Bit    Registers := 2     
-	                7 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
 +---Muxes : 
 	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
 	   3 Input     10 Bit        Muxes := 2     
-	   4 Input     10 Bit        Muxes := 2     
-	   2 Input      7 Bit        Muxes := 1     
-	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 6     
+	   5 Input     10 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 3     
+	   3 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -429,54 +398,33 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/c_re_i_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/ComplexValueGenerator.vhd:62]
-WARNING: [Synth 8-6014] Unused sequential element ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/c_im_i_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/ComplexValueGenerator.vhd:63]
 INFO: [Synth 8-5546] ROM "HdmixI/VgaxI/VgaControlerxI/VgaSyncxS[HSyncxS]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "HdmixI/VgaxI/VgaControlerxI/VCountxD" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "HdmixI/VgaxI/VgaControlerxI/VgaSyncxS[VSyncxS]" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5545] ROM "mandelbrot_calculatorxB.mandelbrot_calculatorxI/iterations_s_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mandelbrot_calculatorxB.mandelbrot_calculatorxI/iterations_s[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-6014] Unused sequential element ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/posx_i_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/ComplexValueGenerator.vhd:64]
+WARNING: [Synth 8-6014] Unused sequential element ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/c_re_i_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/ComplexValueGenerator.vhd:62]
 WARNING: [Synth 8-6014] Unused sequential element ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/posy_i_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/ComplexValueGenerator.vhd:65]
-WARNING: [Synth 8-6014] Unused sequential element mandelbrot_calculatorxB.mandelbrot_calculatorxI/pipe_count_s_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:179]
-WARNING: [Synth 8-6014] Unused sequential element mandelbrot_calculatorxB.mandelbrot_calculatorxI/iterations_s_reg[0] was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:171]
+WARNING: [Synth 8-6014] Unused sequential element ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/c_im_i_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/ComplexValueGenerator.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element mandelbrot_calculatorxB.mandelbrot_calculatorxI/pipe_count_s_reg was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:201]
+WARNING: [Synth 8-6014] Unused sequential element mandelbrot_calculatorxB.mandelbrot_calculatorxI/iterations_s_reg[0] was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:191]
+WARNING: [Synth 8-6014] Unused sequential element mandelbrot_calculatorxB.mandelbrot_calculatorxI/iterations_s_reg[1] was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:191]
+WARNING: [Synth 8-6014] Unused sequential element mandelbrot_calculatorxB.mandelbrot_calculatorxI/iterations_s_reg[2] was removed.  [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:191]
 DSP Report: Generating DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0, operation Mode is: A*B.
 DSP Report: operator mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0 is absorbed into DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_real2_big_s0.
 DSP Report: Generating DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_s0, operation Mode is: A*B.
 DSP Report: operator mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_s0 is absorbed into DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_ri_big_s0.
 DSP Report: Generating DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0, operation Mode is: A*B.
 DSP Report: operator mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0 is absorbed into DSP mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_imag2_big_s0.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][9]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][8]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][7]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][6]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][5]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][4]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][3]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][2]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][1]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][0]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][9]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][8]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][7]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][6]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][5]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][4]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][3]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][2]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][1]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][0]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][9]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][8]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][7]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][6]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][5]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][4]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][3]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][2]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][1]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][0]) is unused and will be removed from module mse_mandelbrot.
+INFO: [Synth 8-3886] merging instance 'mandelbrot_calculatorxB.mandelbrot_calculatorxI/c_real_s_reg[2][0]' (LD) to 'mandelbrot_calculatorxB.mandelbrot_calculatorxI/c_imag_s_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'mandelbrot_calculatorxB.mandelbrot_calculatorxI/c_real_s_reg[1][0]' (LD) to 'mandelbrot_calculatorxB.mandelbrot_calculatorxI/c_imag_s_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'mandelbrot_calculatorxB.mandelbrot_calculatorxI/c_real_s_reg[0][0]' (LD) to 'mandelbrot_calculatorxB.mandelbrot_calculatorxI/c_imag_s_reg[0][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mandelbrot_calculatorxB.mandelbrot_calculatorxI/c_imag_s_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mandelbrot_calculatorxB.mandelbrot_calculatorxI/c_imag_s_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mandelbrot_calculatorxB.mandelbrot_calculatorxI/c_imag_s_reg[0][0] )
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/y_address_s_reg[0][9]) is unused and will be removed from module mse_mandelbrot.
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/y_address_s_reg[0][8]) is unused and will be removed from module mse_mandelbrot.
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/y_address_s_reg[0][7]) is unused and will be removed from module mse_mandelbrot.
@@ -507,6 +455,38 @@ WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_c
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/y_address_s_reg[2][2]) is unused and will be removed from module mse_mandelbrot.
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/y_address_s_reg[2][1]) is unused and will be removed from module mse_mandelbrot.
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/y_address_s_reg[2][0]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][9]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][8]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][7]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][6]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][5]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][4]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][3]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][2]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][1]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[0][0]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][9]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][8]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][7]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][6]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][5]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][4]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][3]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][2]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][1]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[1][0]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][9]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][8]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][7]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][6]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][5]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][4]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][3]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][2]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][1]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/x_address_s_reg[2][0]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/c_re_i_reg[0]) is unused and will be removed from module mse_mandelbrot.
+WARNING: [Synth 8-3332] Sequential element (ComplexeValueGeneratorxB.ComplexeValueGeneratorxI/c_im_i_reg[0]) is unused and will be removed from module mse_mandelbrot.
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_s_reg[31]) is unused and will be removed from module mse_mandelbrot.
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_s_reg[30]) is unused and will be removed from module mse_mandelbrot.
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_r2_i2_big_s_reg[29]) is unused and will be removed from module mse_mandelbrot.
@@ -545,11 +525,9 @@ WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_c
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_s_reg[9]) is unused and will be removed from module mse_mandelbrot.
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_s_reg[8]) is unused and will be removed from module mse_mandelbrot.
 WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_s_reg[7]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_s_reg[6]) is unused and will be removed from module mse_mandelbrot.
-WARNING: [Synth 8-3332] Sequential element (mandelbrot_calculatorxB.mandelbrot_calculatorxI/z_2ri_big_s_reg[5]) is unused and will be removed from module mse_mandelbrot.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 771.988 ; gain = 530.387
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 772.582 ; gain = 531.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -584,13 +562,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'HdmixI/ClkVgaHdmi1024x600
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'HdmixI/ClkVgaHdmi1024x600xG.ClkVgaHdmi1024x600xI/ClkSys100MhzxC' to 'HdmixI/ClkVgaHdmi1024x600xG.BUFGClkSysToClkVgaHdmixI/O'
 INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 817.906 ; gain = 576.305
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 821.074 ; gain = 579.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 819.594 ; gain = 577.992
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 823.094 ; gain = 581.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -601,20 +579,20 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:174]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:177]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:175]
-INFO: [Synth 8-3886] merging instance 'i_721' (FDC) to 'i_738'
-INFO: [Synth 8-3886] merging instance 'i_738' (FDC) to 'i_688'
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:196]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:199]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:197]
+INFO: [Synth 8-3886] merging instance 'i_1072' (FDCE) to 'i_1089'
+INFO: [Synth 8-3886] merging instance 'i_1089' (FDCE) to 'i_1039'
 INFO: [Synth 8-3886] merging instance 'HdmixI/VgaToHdmixI/TmdsEncoderC1xI/TmdsEncodedDataxDO_reg[8]' (FDS) to 'HdmixI/VgaToHdmixI/TmdsEncoderC2xI/TmdsEncodedDataxDO_reg[8]'
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:172]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:172]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:172]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:173]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:173]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:173]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:194]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:194]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:194]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:195]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:195]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/new/mandelbrot_calculator.vhd:195]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 846.848 ; gain = 605.246
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 852.828 ; gain = 611.598
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -639,7 +617,7 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5410] Found another clock driver \HdmixI/ClkVgaHdmi1024x600xG.BUFGClkSysToClkVgaHdmixI :O [C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.srcs/sources_1/imports/src/hdmi.vhd:363]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 846.848 ; gain = 605.246
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 852.828 ; gain = 611.598
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -652,7 +630,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 846.848 ; gain = 605.246
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 852.828 ; gain = 611.598
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -664,25 +642,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 846.848 ; gain = 605.246
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 852.828 ; gain = 611.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 846.848 ; gain = 605.246
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 852.828 ; gain = 611.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 846.848 ; gain = 605.246
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 852.828 ; gain = 611.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 846.848 ; gain = 605.246
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 852.828 ; gain = 611.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -703,30 +681,32 @@ Report Cell Usage:
 |1     |blk_mem_bram_bbox_1          |     1|
 |2     |clk_vga_hdmi_1024x600_bbox_0 |     1|
 |3     |BUFG                         |     2|
-|4     |CARRY4                       |    36|
+|4     |CARRY4                       |    52|
 |5     |DSP48E1                      |     3|
 |6     |LUT1                         |     5|
-|7     |LUT2                         |   203|
-|8     |LUT3                         |    73|
-|9     |LUT4                         |    42|
-|10    |LUT5                         |    28|
-|11    |LUT6                         |    82|
+|7     |LUT2                         |   227|
+|8     |LUT3                         |    74|
+|9     |LUT4                         |    87|
+|10    |LUT5                         |    53|
+|11    |LUT6                         |   121|
 |12    |OSERDESE2                    |     4|
 |13    |OSERDESE2_1                  |     4|
-|14    |FDCE                         |   161|
-|15    |FDRE                         |    37|
-|16    |FDSE                         |     4|
-|17    |IBUF                         |     2|
-|18    |OBUF                         |     1|
-|19    |OBUFDS                       |     4|
+|14    |FDCE                         |   199|
+|15    |FDPE                         |     7|
+|16    |FDRE                         |    37|
+|17    |FDSE                         |     4|
+|18    |LD                           |    90|
+|19    |IBUF                         |     2|
+|20    |OBUF                         |     1|
+|21    |OBUFDS                       |     4|
 +------+-----------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------------------------------+----------------------+------+
 |      |Instance                                              |Module                |Cells |
 +------+------------------------------------------------------+----------------------+------+
-|1     |top                                                   |                      |   708|
-|2     |  \ComplexeValueGeneratorxB.ComplexeValueGeneratorxI  |ComplexValueGenerator |    46|
+|1     |top                                                   |                      |   993|
+|2     |  \ComplexeValueGeneratorxB.ComplexeValueGeneratorxI  |ComplexValueGenerator |   116|
 |3     |  HdmixI                                              |hdmi                  |   277|
 |4     |    VgaToHdmixI                                       |vga_to_hdmi           |    69|
 |5     |      SerializerChannel0xI                            |serializer_10_to_1    |     2|
@@ -738,27 +718,28 @@ Report Instance Areas:
 |11    |      TmdsEncoderC2xI                                 |tmds_encoder_4        |    19|
 |12    |    VgaxI                                             |vga                   |   204|
 |13    |      VgaControlerxI                                  |vga_controler         |   204|
-|14    |  \mandelbrot_calculatorxB.mandelbrot_calculatorxI    |mandelbrot_calculator |   366|
+|14    |  \mandelbrot_calculatorxB.mandelbrot_calculatorxI    |mandelbrot_calculator |   581|
 +------+------------------------------------------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 846.848 ; gain = 605.246
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 852.828 ; gain = 611.598
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 129 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 846.848 ; gain = 223.383
-Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 846.848 ; gain = 605.246
+Synthesis finished with 0 errors, 0 critical warnings and 144 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:43 . Memory (MB): peak = 852.828 ; gain = 228.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 852.828 ; gain = 611.598
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 151 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 90 instances were transformed.
+  LD => LDCE: 90 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-82 Infos, 181 Warnings, 0 Critical Warnings and 0 Errors encountered.
+91 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 846.848 ; gain = 617.461
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 852.828 ; gain = 623.629
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/mse_mandelbrot.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mse_mandelbrot_utilization_synth.rpt -pb mse_mandelbrot_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 846.848 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat May  5 17:54:26 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 852.828 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May  7 13:33:34 2018...

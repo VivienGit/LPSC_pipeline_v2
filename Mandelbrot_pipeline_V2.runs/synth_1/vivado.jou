@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat May  5 17:53:27 2018
-# Process ID: 16832
+# Start of session at: Mon May  7 13:32:33 2018
+# Process ID: 972
 # Current directory: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1
 # Command line: vivado.exe -log mse_mandelbrot.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mse_mandelbrot.tcl
 # Log file: C:/Users/Vivien/Documents/Master/S2/LPSC/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2/Mandelbrot_pipeline_V2.runs/synth_1/mse_mandelbrot.vds

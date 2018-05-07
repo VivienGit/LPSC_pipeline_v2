@@ -69,6 +69,7 @@ architecture Behavioral of mandelbrot_calculator is
 
   -- For the pipeline -- L'indice pipe_coun dï¿½finit qui est sur la sortie
   signal pipe_count_s         : integer := 0;           -- Pour savoir ou on est au niveau du pipeline
+  signal pipe_count1_s        : integer := 0;           -- -1 sur le compteur pour récupérer la bonne valeur
 
   type iterations_tab is array (NB_PIPES-1 downto 0) of std_logic_vector(ITER_SIZE-1 downto 0);
   signal iterations_s         : iterations_tab;
@@ -78,21 +79,27 @@ architecture Behavioral of mandelbrot_calculator is
   signal y_address_s          : address_tab;
   
   type c_input_tab is array (NB_PIPES-1 downto 0) of std_logic_vector(SIZE-1 downto 0);
+  --signal c_real_s             : c_input_tab := (others => (others => '0'));
+  --signal c_imag_s             : c_input_tab := (others => (others => '0'));
   signal c_real_s             : c_input_tab;
   signal c_imag_s             : c_input_tab;
   
   signal soft_reset_s         : boolean := false;
+  signal idle_reset_s         : boolean := false;
  
   signal x_o_s           : std_logic_vector(X_ADD_SIZE-1 downto 0);
   signal y_o_s           : std_logic_vector(Y_ADD_SIZE-1 downto 0);
+  
+  signal finished_s      : std_logic;
 
 
   -- Stat machine states
-  constant THREE_FREE_PIPES_STATE : std_logic_vector := "00";  -- Inital state
-  constant TWO_FREE_PIPES_STATE   : std_logic_vector := "01";
-  constant ONE_FREE_PIPE_STATE    : std_logic_vector := "10";
-  constant PIPES_ARE_FULL_STATE   : std_logic_vector := "11";
-  signal next_state_s, current_states : std_logic_vector (1 downto 0);
+  constant IDLE_STATE             : std_logic_vector := "000";
+  constant THREE_FREE_PIPES_STATE : std_logic_vector := "001";  -- Inital state
+  constant TWO_FREE_PIPES_STATE   : std_logic_vector := "010";
+  constant ONE_FREE_PIPE_STATE    : std_logic_vector := "011";
+  constant PIPES_ARE_FULL_STATE   : std_logic_vector := "100";
+  signal next_state_s, current_states : std_logic_vector (2 downto 0);
 
   -- Calculation signals
   signal one_is_finished_s    : boolean := false;
@@ -102,7 +109,7 @@ architecture Behavioral of mandelbrot_calculator is
   signal zn1_imag_big_s       : std_logic_vector(SIZE_BIG-1 downto 0);
 
   signal z_real2_big_s        : std_logic_vector(SIZE_BIG-1 downto 0);
-  signal zn1_real2_big_s      : std_logic_vector(SIZE_BIG-1 downto 0);    -- Le new c'est ï¿½ gauche de la bascule !!!
+  signal zn1_real2_big_s      : std_logic_vector(SIZE_BIG-1 downto 0); 
   signal z_imag2_big_s        : std_logic_vector(SIZE_BIG-1 downto 0);
   signal zn1_imag2_big_s      : std_logic_vector(SIZE_BIG-1 downto 0);
   signal z_r2_i2_big_s        : std_logic_vector(SIZE_BIG-1 downto 0);
@@ -111,16 +118,23 @@ architecture Behavioral of mandelbrot_calculator is
   signal zn1_ri_big_s         : std_logic_vector(SIZE_BIG-1 downto 0);
   signal z_2ri_big_s          : std_logic_vector(SIZE_BIG-1 downto 0);
   signal zn1_2ri_big_s        : std_logic_vector(SIZE_BIG-1 downto 0);
---  signal zn1_real_new_s       : std_logic_vector(SIZE_BIG-1 downto 0);
---  signal zn1_imag_new_s       : std_logic_vector(SIZE_BIG-1 downto 0);
 
   signal radius_big_s         : std_logic_vector(SIZE_BIG downto 0);    -- No minus 1, we extend
   signal radius_s             : std_logic_vector(SIZE_RADIUS downto 0); -- same
+  
+  signal c_real_singel_s      : std_logic_vector(SIZE-1 downto 0);
+  signal c_imag_singel_s      : std_logic_vector(SIZE-1 downto 0);
+
 
 begin
   -- The values will only be considere if finished is set
   z_real_o        <= z_real_s;
   z_imaginary_o   <= z_imag_s;
+  
+  finished_o <= finished_s;
+  
+  c_real_singel_s <= c_real_i;
+  c_imag_singel_s <= c_imaginary_i;
   
   -- Output address
   x_o     <= x_o_s;
@@ -129,46 +143,56 @@ begin
   ----------------------------------------------
   --             calc_proc             ---------
   ----------------------------------------------
-  calc_proc : process (z_real_s, z_imag_s, z_real2_big_s, z_imag2_big_s, radius_big_s, radius_s, z_r2_i2_big_s, z_2ri_big_s, c_imaginary_i, c_real_i)
+  calc_proc : process (z_real_s, z_imag_s, z_real2_big_s, z_imag2_big_s, radius_big_s, radius_s, z_r2_i2_big_s, z_2ri_big_s, c_imaginary_i, c_real_i, pipe_count_s)
   begin
-    one_is_finished_s <= false;
-
-    -- Calcul the squared of the input values
-    zn1_real2_big_s   <= std_logic_vector(signed(z_real_s)*signed(z_real_s));
-    zn1_imag2_big_s   <= std_logic_vector(signed(z_imag_s)*signed(z_imag_s));
-
-    -- Calcul the radius to test if we need to stop
-    radius_big_s    <= std_logic_vector(signed(z_real2_big_s(SIZE_BIG-1) & z_real2_big_s)+signed(z_imag2_big_s(SIZE_BIG-1) & z_imag2_big_s));
-    radius_s        <= std_logic_vector(radius_big_s(SIZE_BIG downto COMMA_BIG));
-
-    ----------------- Calcul the real part      --------------------
-    -- Substraction of the squared inputs
-    zn1_r2_i2_big_s   <= std_logic_vector(signed(z_real2_big_s)-signed(z_imag2_big_s));
-    -- New value of the output (next value of the input)
-    zn1_real_big_s  <= std_logic_vector(signed(std_logic_vector'(c_real_s(pipe_count_s) & EXTEND_COMMA)) + signed(z_r2_i2_big_s));
-
-    ----------------- Calcul the imaginary part  --------------
-    -- Multiplication of the two inputs and multiplication by 2
-    zn1_ri_big_s    <= std_logic_vector(signed(z_real_s)*signed(z_imag_s));
-    zn1_2ri_big_s   <= z_ri_big_s(SIZE_BIG-2 downto 0) & '0';
-    -- New value of the output (next value of the input)
-    zn1_imag_big_s  <= std_logic_vector(signed(std_logic_vector'(c_imag_s(pipe_count_s) & EXTEND_COMMA)) + signed(z_2ri_big_s));
-
-    -- Condition to detect if the one before was the one to go out 
-    if signed(radius_s) >= 4 AND unsigned(iterations_s(0)) >= max_iter then
-        one_is_finished_s <= true;       
-    end if;
-
+      one_is_finished_s <= false;
+  
+      -- Calcul the squared of the input values
+      zn1_real2_big_s   <= std_logic_vector(signed(z_real_s)*signed(z_real_s));
+      zn1_imag2_big_s   <= std_logic_vector(signed(z_imag_s)*signed(z_imag_s));
+  
+      -- Calcul the radius to test if we need to stop
+      radius_big_s    <= std_logic_vector(signed(z_real2_big_s(SIZE_BIG-1) & z_real2_big_s)+signed(z_imag2_big_s(SIZE_BIG-1) & z_imag2_big_s));
+      radius_s        <= std_logic_vector(radius_big_s(SIZE_BIG downto COMMA_BIG));
+  
+      ----------------- Calcul the real part      --------------------
+      -- Substraction of the squared inputs
+      zn1_r2_i2_big_s   <= std_logic_vector(signed(z_real2_big_s)-signed(z_imag2_big_s));
+      -- New value of the output (next value of the input)
+  --    if (rst_i = '1') then
+   --     zn1_real_big_s <= (others => '0');
+   --   else
+        zn1_real_big_s  <= std_logic_vector(signed(std_logic_vector'(c_real_s(pipe_count_s) & EXTEND_COMMA)) + signed(z_r2_i2_big_s));
+  --    end if;
+  
+      ----------------- Calcul the imaginary part  --------------
+      -- Multiplication of the two inputs and multiplication by 2
+      zn1_ri_big_s    <= std_logic_vector(signed(z_real_s)*signed(z_imag_s));
+      zn1_2ri_big_s   <= z_ri_big_s(SIZE_BIG-2 downto 0) & '0';
+      -- New value of the output (next value of the input)
+  --    if (rst_i = '1') then
+   --     zn1_imag_big_s <= (others => '0');
+  --    else
+        zn1_imag_big_s  <= std_logic_vector(signed(std_logic_vector'(c_imag_s(pipe_count_s) & EXTEND_COMMA)) + signed(z_2ri_big_s));
+   --   end if;
+  
+      -- Condition to detect if the one before was the one to go out 
+      if signed(radius_s) >= 4 or unsigned(iterations_s(pipe_count_s)) >= max_iter then
+          --radius_big_s <= (others => '0');
+          one_is_finished_s <= true;       
+      end if;
   end process; -- calc_proc
 
     ----------------------------------------------
      --       Output Buffer and synch           --
     ----------------------------------------------
     buffer_proc : process (clk_i, rst_i, soft_reset_s, zn1_real_big_s, zn1_imag_big_s, zn1_real2_big_s,
-                           zn1_imag2_big_s, zn1_r2_i2_big_s, zn1_ri_big_s, zn1_2ri_big_s)
+                           zn1_imag2_big_s, zn1_r2_i2_big_s, zn1_ri_big_s, zn1_2ri_big_s, pipe_count_s)
     begin
-        if (rst_i = '1') then
+        if ((rst_i = '1') or idle_reset_s) then
             iterations_s      <= (others => (others => '0')); -- Start the calculation
+            --c_real_s          <= (others => (others => '0'));
+            --c_imag_s          <= (others => (others => '0'));  
             z_real_s          <= (others => '0');
             z_imag_s          <= (others => '0');
             z_real2_big_s     <= (others => '0');
@@ -177,12 +201,13 @@ begin
             z_ri_big_s        <= (others => '0');
             z_2ri_big_s       <= (others => '0');
             pipe_count_s      <= 0;
+            pipe_count1_s      <= 2;  -- Pour être en retard de 1
         elsif Rising_Edge(clk_i) then
             -- Incrementing the iterations
             if soft_reset_s then
-                iterations_s(pipe_count_s) <= (others => '0');
-                z_real_s          <= (others => '0');
-                z_imag_s         <= (others => '0');
+                iterations_s(pipe_count_s)  <= (others => '0');
+                z_real_s                    <= (others => '0');
+                z_imag_s                    <= (others => '0');
             else            
                 if pipe_count_s = 0 then
                   iterations_s(0) <= std_logic_vector(unsigned(iterations_s(0)) + 1);
@@ -191,15 +216,16 @@ begin
                 else
                   iterations_s(2) <= std_logic_vector(unsigned(iterations_s(2)) + 1);
                 end if;
+                z_real_s          <= zn1_real_big_s(SIZE_IN_BIG-1 downto comma);
+                z_imag_s          <= zn1_imag_big_s(SIZE_IN_BIG-1 downto comma);
             end if;
-
-            z_real_s          <= zn1_real_big_s(SIZE_IN_BIG-1 downto comma);
-            z_imag_s          <= zn1_imag_big_s(SIZE_IN_BIG-1 downto comma);
-            z_real2_big_s     <= zn1_real2_big_s;
-            z_imag2_big_s     <= zn1_imag2_big_s;
-            z_r2_i2_big_s     <= zn1_r2_i2_big_s;
-            z_ri_big_s        <= zn1_ri_big_s;
-            z_2ri_big_s       <= zn1_2ri_big_s;
+                z_real2_big_s     <= zn1_real2_big_s;
+                z_imag2_big_s     <= zn1_imag2_big_s;
+                z_r2_i2_big_s     <= zn1_r2_i2_big_s;
+                z_ri_big_s        <= zn1_ri_big_s;
+                z_2ri_big_s       <= zn1_2ri_big_s;
+            
+            
             
             -- The pipe is alays running
             if pipe_count_s >= 2 then
@@ -208,73 +234,82 @@ begin
                 pipe_count_s <= pipe_count_s + 1;
             end if;
         end if;
+        pipe_count1_s <= (pipe_count_s + 2) mod 3;
     end process; -- buffer_proc
 
     ----------------------------------------------
     --           State machine                  --
     ----------------------------------------------
-    state_machine : process (current_states, start_i)
+    state_machine : process (current_states, start_i, one_is_finished_s)
     begin
-        next_state_s <= THREE_FREE_PIPES_STATE;
-        finished_o    <= '0';
-        new_val_o     <= '0';
-        soft_reset_s  <= false;
-        x_o_s         <= (others => '0');
-        y_o_s         <= (others => '0');
-
+        next_state_s      <= IDLE_STATE;
+        --one_is_finished_s <= false;
+        finished_s        <= '0';
+        new_val_o         <= '0';
+        iterations_o      <= (others => '0');
+        soft_reset_s      <= false;
+        idle_reset_s      <= false;
+        x_o_s             <= (others => '0');
+        y_o_s             <= (others => '0');
+        
         -- State machine
         case current_states is
+            when IDLE_STATE =>
+              idle_reset_s <= true;
+              next_state_s <= THREE_FREE_PIPES_STATE;
             when THREE_FREE_PIPES_STATE =>
               new_val_o <= '1';
-              if start_i = '1' then
-                  x_address_s(pipe_count_s) <= x_i;
-                  y_address_s(pipe_count_s) <= y_i;
-                  soft_reset_s    <= true;
-                  next_state_s    <= TWO_FREE_PIPES_STATE;                                  
-              else
-                  next_state_s <= THREE_FREE_PIPES_STATE;
-              end if;
+              soft_reset_s <= true;
+              x_address_s(pipe_count_s) <= x_i;
+              y_address_s(pipe_count_s) <= y_i;
+              c_real_s(pipe_count_s) <= c_real_singel_s;
+              c_imag_s(pipe_count_s) <= c_imag_singel_s;
+              
+              next_state_s    <= TWO_FREE_PIPES_STATE;
             when TWO_FREE_PIPES_STATE  =>
                 new_val_o <= '1';
-                if start_i = '1' then
-                    x_address_s(pipe_count_s) <= x_i;
-                    y_address_s(pipe_count_s) <= y_i;
-                    soft_reset_s   <= true;
-                    next_state_s  <= ONE_FREE_PIPE_STATE;
-                elsif one_is_finished_s then
-                    x_o_s           <= x_address_s(pipe_count_s);
-                    y_o_s           <= y_address_s(pipe_count_s);
-                    finished_o    <= '1';
-                    next_state_s  <= THREE_FREE_PIPES_STATE;
+                soft_reset_s <= true;
+                x_address_s(pipe_count_s) <= x_i;
+                y_address_s(pipe_count_s) <= y_i;
+                c_real_s(pipe_count_s) <= c_real_singel_s;
+                c_imag_s(pipe_count_s) <= c_imag_singel_s;
+                if one_is_finished_s then
+                    iterations_o    <= iterations_s(pipe_count1_s);
+                    x_o_s           <= x_address_s(pipe_count1_s);
+                    y_o_s           <= y_address_s(pipe_count1_s);
+                    finished_s    <= '1';
+                    next_state_s  <= TWO_FREE_PIPES_STATE;
                 else
-                    next_state_s <= TWO_FREE_PIPES_STATE;
+                    next_state_s  <= ONE_FREE_PIPE_STATE;
                 end if;
             when ONE_FREE_PIPE_STATE  =>
                 new_val_o <= '1';
-                if start_i = '1' then
-                    x_address_s(pipe_count_s) <= x_i;
-                    y_address_s(pipe_count_s) <= y_i;
-                    soft_reset_s   <= true;
-                    next_state_s  <= PIPES_ARE_FULL_STATE;
-                elsif one_is_finished_s then
-                    x_o_s           <= x_address_s(pipe_count_s);
-                    y_o_s           <= y_address_s(pipe_count_s);
-                    finished_o    <= '1';
-                    next_state_s  <= TWO_FREE_PIPES_STATE;
+                soft_reset_s <= true;
+                x_address_s(pipe_count_s) <= x_i;
+                y_address_s(pipe_count_s) <= y_i;
+                c_real_s(pipe_count_s) <= c_real_singel_s;
+                c_imag_s(pipe_count_s) <= c_imag_singel_s;
+                if one_is_finished_s then
+                    iterations_o    <= iterations_s(pipe_count1_s);
+                    x_o_s           <= x_address_s(pipe_count1_s);
+                    y_o_s           <= y_address_s(pipe_count1_s);
+                    finished_s    <= '1';
+                    next_state_s  <= ONE_FREE_PIPE_STATE;
                 else
-                    next_state_s <= ONE_FREE_PIPE_STATE;
+                    next_state_s  <= PIPES_ARE_FULL_STATE;
                 end if;
             when PIPES_ARE_FULL_STATE  =>
                 if one_is_finished_s then
-                    x_o_s           <= x_address_s(pipe_count_s);
-                    y_o_s           <= y_address_s(pipe_count_s);
-                    finished_o    <= '1';
-                    next_state_s  <= TWO_FREE_PIPES_STATE;
+                    iterations_o    <= iterations_s(pipe_count1_s);
+                    x_o_s           <= x_address_s(pipe_count1_s);
+                    y_o_s           <= y_address_s(pipe_count1_s);
+                    finished_s    <= '1';
+                    next_state_s  <= ONE_FREE_PIPE_STATE;
                 else
-                    next_state_s <= TWO_FREE_PIPES_STATE;
+                    next_state_s  <= PIPES_ARE_FULL_STATE;
                 end if;
             when others =>
-              next_state_s <= THREE_FREE_PIPES_STATE;
+              next_state_s <= IDLE_STATE;
         end case;
 
     end process; -- state_machine
@@ -285,7 +320,7 @@ begin
   	 synch_proc : process (clk_i, rst_i)
      begin
         if (rst_i = '1') then
-          current_states <= THREE_FREE_PIPES_STATE;
+          current_states <= IDLE_STATE;
         elsif Rising_Edge(clk_i) then
           current_states <= next_state_s;
         end if;
